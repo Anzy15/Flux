@@ -1,10 +1,8 @@
 import * as pdfjsLib from 'pdfjs-dist'
 
-// Use the local worker bundled with pdfjs-dist
-pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString()
+// Use the unpkg CDN for the worker to prevent Vite from double-minifying it in production
+// which often causes "n.toHex is not a function" when parsing complex PDFs.
+pdfjsLib.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`
 
 /**
  * Extracts all text from a PDF File object.
@@ -13,7 +11,14 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
  */
 export async function extractTextFromPDF(file) {
   const arrayBuffer = await file.arrayBuffer()
-  const pdf         = await pdfjsLib.getDocument({ data: arrayBuffer }).promise
+  
+  // Provide CMaps and standard fonts to handle complex PDFs that don't embed all fonts
+  const pdf = await pdfjsLib.getDocument({ 
+    data: arrayBuffer,
+    cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/cmaps/`,
+    cMapPacked: true,
+    standardFontDataUrl: `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/standard_fonts/`
+  }).promise
   const pageTexts   = []
 
   for (let i = 1; i <= pdf.numPages; i++) {
