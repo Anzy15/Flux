@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Flux AI | Intellectual Mastery Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-fixed-dim": "#dce7c7",
+              "primary-dim": "#6462ec",
+              "primary-container": "#7472fd",
+              "surface-container-highest": "#142449",
+              "inverse-surface": "#faf8ff",
+              "tertiary": "#e1ff9d",
+              "error": "#fd6f85",
+              "outline-variant": "#38476d",
+              "inverse-on-surface": "#4d556b",
+              "tertiary-fixed": "#d1f286",
+              "inverse-primary": "#4e4bd5",
+              "secondary-dim": "#b3bd9f",
+              "secondary-fixed": "#ebf5d4",
+              "on-background": "#dee5ff",
+              "on-secondary-container": "#9ea88b",
+              "surface-container-low": "#081329",
+              "surface-container": "#0c1934",
+              "surface-variant": "#142449",
+              "tertiary-fixed-dim": "#c3e379",
+              "on-secondary": "#3a432c",
+              "on-surface-variant": "#9baad6",
+              "on-primary-container": "#000000",
+              "on-secondary-fixed": "#424b34",
+              "tertiary-container": "#d1f286",
+              "on-tertiary-fixed": "#344700",
+              "on-primary": "#0e0078",
+              "on-primary-fixed-variant": "#322bbb",
+              "secondary-container": "#202814",
+              "surface-dim": "#060e20",
+              "on-primary-fixed": "#13008e",
+              "primary": "#9392ff",
+              "primary-fixed-dim": "#acabff",
+              "surface": "#060e20",
+              "on-tertiary-container": "#435b00",
+              "error-dim": "#c8475d",
+              "background": "#060e20",
+              "error-container": "#8a1632",
+              "surface-container-high": "#101e3e",
+              "on-tertiary": "#4a6402",
+              "on-error": "#490013",
+              "surface-container-lowest": "#000000",
+              "primary-fixed": "#bbbbff",
+              "on-tertiary-fixed-variant": "#4c6604",
+              "secondary": "#c0caac",
+              "surface-tint": "#9392ff",
+              "outline": "#65759e",
+              "surface-bright": "#172b54",
+              "tertiary-dim": "#c3e379",
+              "on-secondary-fixed-variant": "#5e684e",
+              "on-surface": "#dee5ff",
+              "on-error-container": "#ff97a3"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(6, 14, 32, 0.7);
+            backdrop-filter: blur(24px);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #9392ff 0%, #6462ec 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .primary-gradient {
+            background: linear-gradient(135deg, #9392ff 0%, #6462ec 100%);
+        }
+    </style>
+</head>
+<body class="antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-8 h-16 w-full bg-[#060e20]/70 backdrop-blur-3xl font-['Space_Grotesk'] text-on-surface antialiased">
+<div class="flex items-center gap-2">
+<span class="text-2xl font-bold tracking-tight text-[#9392ff]">Flux AI</span>
+</div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#9392ff] font-bold transition-colors duration-200" href="#">Home</a>
+<a class="text-[#9baad6] hover:text-[#9392ff] transition-colors duration-200" href="#">My Library</a>
+<a class="text-[#9baad6] hover:text-[#9392ff] transition-colors duration-200" href="#">Recent Uploads</a>
+<a class="text-[#9baad6] hover:text-[#9392ff] transition-colors duration-200" href="#">Settings</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#9baad6] hover:text-[#9392ff] transition-colors" data-icon="search">search</button>
+<button class="material-symbols-outlined text-[#9baad6] hover:text-[#9392ff] transition-colors" data-icon="notifications">notifications</button>
+<div class="h-8 w-8 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant/20">
+<img alt="User profile" data-alt="close-up portrait of a professional male avatar with glasses and a friendly expression on a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvgWOo_2rJLVmusbbIHOdLYffCCOfzPQp8PKSSWCPrDdYVt4L657fYb1VfTlMp8cCbTNa6hZkGf0K1l_bsPY8z_n3Bad0xuAVbHkFy-FRPY7tej5BLx6U1Dg7WTFloVhs6wU6j_-EL3G0jvWLOBtNDH5MKVkZTCI0Uhxbc245IH8Iwm0jOD_solwzWS2Jn-KKPlOndd9DgwT5xbDo_5re_-xGb20SWQ8z6lt71zohX8_YcGWnMGzNBEv4yqdr4ea6PjO8x6CQhKNY"/>
+</div>
+</div>
+</nav>
+<!-- Side Navigation Bar (Desktop) -->
+<aside class="hidden md:flex fixed left-0 top-0 h-full w-64 z-40 flex flex-col py-8 px-4 gap-y-6 bg-[#081329] font-['Space_Grotesk'] font-medium shadow-2xl shadow-black/40">
+<div class="mt-16 mb-8 px-4">
+<h1 class="text-xl font-bold text-[#dee5ff]">Flux AI</h1>
+<p class="text-xs text-on-surface-variant tracking-widest uppercase mt-1">Intellectual Mastery</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-4 px-4 py-3 text-[#9392ff] border-r-2 border-[#9392ff] bg-[#142449]/50 active:translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-[#9baad6] hover:bg-[#101e3e] hover:text-[#dee5ff] transition-all active:translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="library_books">library_books</span>
+<span>My Library</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-[#9baad6] hover:bg-[#101e3e] hover:text-[#dee5ff] transition-all active:translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span>Recent Uploads</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-[#9baad6] hover:bg-[#101e3e] hover:text-[#dee5ff] transition-all active:translate-x-1 duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span>Settings</span>
+</a>
+</nav>
+<div class="mt-auto p-4 bg-surface-container rounded-xl">
+<p class="text-sm font-headline mb-4">Elevate your learning capacity.</p>
+<button class="w-full primary-gradient text-on-primary py-2.5 rounded-md font-bold text-sm hover:opacity-90 transition-opacity">
+                Upgrade to Pro
+            </button>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="md:ml-64 pt-24 pb-12 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Hero / Drag & Drop Section -->
+<section class="mb-16">
+<div class="mb-10 max-w-2xl">
+<h2 class="text-5xl font-headline font-bold tracking-tighter text-on-surface mb-4">
+                    Ignite Your <span class="text-gradient">Intelligence</span>.
+                </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Transform static documents into dynamic study ecosystems. Upload your PDFs and let the Loom weave your mastery path.
+                </p>
+</div>
+<div class="relative group">
+<div class="absolute -inset-0.5 primary-gradient rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative flex flex-col items-center justify-center border-2 border-dashed border-outline-variant/30 bg-surface-container-low rounded-xl py-20 px-6 transition-all duration-300 hover:bg-surface-container-high/50">
+<div class="bg-surface-container-highest p-4 rounded-full mb-6">
+<span class="material-symbols-outlined text-4xl text-primary" data-icon="cloud_upload">cloud_upload</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-2">Drag &amp; Drop Knowledge</h3>
+<p class="text-on-surface-variant mb-8 text-center max-w-md">Supported formats: PDF, DOCX, TXT. Max file size: 50MB per document.</p>
+<button class="primary-gradient text-on-primary px-8 py-4 rounded-md font-bold flex items-center gap-3 shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="upload_file">upload_file</span>
+                        Upload PDF to Begin
+                    </button>
+</div>
+</div>
+</section>
+<!-- Recent Study Sets Section -->
+<section>
+<div class="flex justify-between items-end mb-10">
+<div>
+<h3 class="text-3xl font-headline font-bold">Recent Study Sets</h3>
+<div class="h-1 w-12 primary-gradient mt-2 rounded-full"></div>
+</div>
+<button class="text-primary font-headline flex items-center gap-2 hover:gap-3 transition-all">
+                    View All Library <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Bento Grid of Study Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: Quantum Physics -->
+<div class="group flex flex-col bg-surface-container rounded-xl p-8 hover:bg-surface-container-high transition-all duration-300 relative overflow-hidden">
+<div class="flex justify-between items-start mb-12">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase">Flashcard Deck</span>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors" data-icon="more_vert">more_vert</button>
+</div>
+<h4 class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors">Intro to Quantum Physics</h4>
+<p class="text-on-surface-variant text-sm mb-12">Last studied 2 hours ago</p>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-2">
+<span class="text-xs font-bold text-on-surface-variant">74% Mastery</span>
+<span class="text-xs font-bold text-primary">12 / 48 Terms</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full primary-gradient" style="width: 74%"></div>
+</div>
+</div>
+</div>
+<!-- Card 2: Neural Networks -->
+<div class="group flex flex-col bg-surface-container rounded-xl p-8 hover:bg-surface-container-high transition-all duration-300 relative overflow-hidden">
+<div class="flex justify-between items-start mb-12">
+<span class="bg-primary-container/10 text-primary px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase">Quiz</span>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors" data-icon="more_vert">more_vert</button>
+</div>
+<h4 class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors">Neural Network Architecture</h4>
+<p class="text-on-surface-variant text-sm mb-12">Generated from "Deep Learning v3.pdf"</p>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-2">
+<span class="text-xs font-bold text-on-surface-variant">42% Mastery</span>
+<span class="text-xs font-bold text-primary">15 Questions</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full primary-gradient" style="width: 42%"></div>
+</div>
+</div>
+</div>
+<!-- Card 3: Philosophy -->
+<div class="group flex flex-col bg-surface-container rounded-xl p-8 hover:bg-surface-container-high transition-all duration-300 relative overflow-hidden lg:col-span-1">
+<div class="flex justify-between items-start mb-12">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase">Flashcard Deck</span>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors" data-icon="more_vert">more_vert</button>
+</div>
+<h4 class="text-2xl font-headline font-bold mb-2 group-hover:text-primary transition-colors">Stoic Philosophy Foundations</h4>
+<p class="text-on-surface-variant text-sm mb-12">New Set • 108 cards total</p>
+<div class="mt-auto">
+<div class="flex justify-between items-end mb-2">
+<span class="text-xs font-bold text-on-surface-variant">12% Mastery</span>
+<span class="text-xs font-bold text-primary">Resume Session</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full primary-gradient" style="width: 12%"></div>
+</div>
+</div>
+</div>
+<!-- Card 4: Medical Sciences (Asymmetric Wide Card) -->
+<div class="group flex flex-col md:flex-row bg-surface-container rounded-xl p-8 hover:bg-surface-container-high transition-all duration-300 relative overflow-hidden md:col-span-2">
+<div class="flex-1 flex flex-col">
+<div class="flex items-start mb-12">
+<span class="bg-primary-container/10 text-primary px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase">Active Review</span>
+</div>
+<h4 class="text-3xl font-headline font-bold mb-4 group-hover:text-primary transition-colors">Advanced Cellular Biology</h4>
+<p class="text-on-surface-variant text-base mb-8 max-w-sm">Focused session on ATP synthesis and metabolic pathways. You've consistently mastered 85% of related quizzes.</p>
+<div class="mt-auto max-w-sm">
+<div class="flex justify-between items-end mb-2">
+<span class="text-xs font-bold text-on-surface-variant">85% Mastery</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full primary-gradient" style="width: 85%"></div>
+</div>
+</div>
+</div>
+<div class="hidden md:block w-1/3 relative h-48 md:h-full ml-8">
+<img alt="Biology study visualization" class="w-full h-full object-cover rounded-xl" data-alt="microscopic view of glowing violet cells and neural structures in a futuristic digital science aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_vEH2lg3RtJsDpiPPuxnfRqOguSDIatcCM-2V3A6jXMCABhryhkwE6DcRFbbB4jvHxRsr167GIw4zdWKNNaaMTdO_Y4-ztRfTvDcTz6Rm6LYIsvfGDw8-Ci3udZAWgurDXlm1PurKOkcYpvtvIfK8Dqr-i9c3-qNeVWwY2V-cSo5eMfoJwVgxj5ML3V0GT4-0cGCWm5EV9SERfWOkiKFyaElSlu3JcR9ByOwzF8zw5P2WL7qrCjzoZEwnSUbfB872Hm7Jjkb3uk8"/>
+<div class="absolute inset-0 bg-surface-container/40 mix-blend-multiply"></div>
+</div>
+</div>
+<!-- Card 5: Quick Add CTA -->
+<div class="group flex flex-col items-center justify-center bg-surface-container-lowest border-2 border-dashed border-outline-variant/20 rounded-xl p-8 hover:border-primary/40 transition-all duration-300">
+<div class="h-14 w-14 rounded-full bg-surface-container-high flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="add">add</span>
+</div>
+<p class="font-headline font-bold text-on-surface-variant group-hover:text-on-surface transition-colors">Create New Set</p>
+</div>
+</div>
+</section>
+<!-- AI Insights Sidebar / Section -->
+<section class="mt-20">
+<div class="bg-surface-container-low rounded-xl p-10 flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-1/3">
+<div class="relative w-48 h-48 mx-auto">
+<div class="absolute inset-0 primary-gradient rounded-full blur-3xl opacity-20"></div>
+<div class="relative w-full h-full bg-surface-container-highest rounded-full flex items-center justify-center overflow-hidden border border-outline-variant/30">
+<img alt="AI Brain" class="w-3/4 opacity-80" data-alt="abstract geometric shape composed of interconnected indigo lines representing artificial intelligence and synaptic connections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4CYV7ha6ZW1E38lQZ63LgyiecB13j9r6nh-s18QNBoBGEPjkGtHt7R3ENt7RTF0MPsDZ298MZAbOFw17EUnSsND4rwyZ9jxGD_ZUcv4aEK3xAzhIvxrmF_OkydTmfanjQO9j9bKbk227rk_ZVFPkgiTVm7jUl5BDifpbZuYpPG5Q0ew4w8p8bP3jscQFrjlTudQO-GMGIJs4QQ3yBiGhNH8QCdmvkvPw50FaFTHx9pHo-JOA-buVnd69BqWcQlH94XhzvYJFbonQ"/>
+</div>
+</div>
+</div>
+<div class="flex-1">
+<h3 class="text-2xl font-headline font-bold mb-4">Loom Intelligence Insight</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8 italic">
+                        "Based on your recent Quantum Physics sessions, I recommend focusing on 'Wave-Particle Duality'. Your recall time on this topic is 30% slower than other modules. I've prepared a 5-minute focused quiz to sharpen your comprehension."
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-surface-container-highest text-primary px-6 py-3 rounded-md font-bold text-sm hover:bg-primary hover:text-on-primary transition-all">Start Focused Quiz</button>
+<button class="text-on-surface-variant font-bold text-sm px-6 py-3 hover:text-on-surface">Dismiss Recommendation</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Nav for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full bg-[#060e20]/90 backdrop-blur-xl flex justify-around items-center h-20 px-4 z-50">
+<a class="flex flex-col items-center text-[#9392ff]" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="text-[10px] font-bold mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center text-[#9baad6]" href="#">
+<span class="material-symbols-outlined" data-icon="library_books">library_books</span>
+<span class="text-[10px] font-bold mt-1">Library</span>
+</a>
+<div class="relative -top-6">
+<button class="h-14 w-14 primary-gradient rounded-full flex items-center justify-center shadow-lg shadow-primary/40 active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-on-primary text-3xl" data-icon="add">add</span>
+</button>
+</div>
+<a class="flex flex-col items-center text-[#9baad6]" href="#">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="text-[10px] font-bold mt-1">Recent</span>
+</a>
+<a class="flex flex-col items-center text-[#9baad6]" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="text-[10px] font-bold mt-1">Settings</span>
+</a>
+</nav>
+</body></html>

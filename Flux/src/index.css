@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #060e20;
+    color: #dee5ff;
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #060e20;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #38476d;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #65759e;
+  }
+}
+
+@layer components {
+  /* ── Material Icons ── */
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', sans-serif;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    line-height: 1;
+    display: inline-block;
+    user-select: none;
+  }
+
+  /* ── Glass morphism ── */
+  .glass {
+    background: rgba(6, 14, 32, 0.70);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  .glass-card {
+    background: rgba(20, 36, 73, 0.70);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+
+  /* ── Gradient utilities ── */
+  .primary-gradient {
+    background: linear-gradient(135deg, #9392ff 0%, #6462ec 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #9392ff 0%, #6462ec 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ── Card 3D flip ── */
+  .card-scene {
+    perspective: 1000px;
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-inner.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 1rem;
+  }
+
+  .card-back {
+    transform: rotateY(180deg);
+  }
+
+  /* ── Drag & drop highlight ── */
+  .drag-active {
+    border-color: #9392ff !important;
+    background-color: rgba(147, 146, 255, 0.05) !important;
+  }
+
+  /* ── Input fields ── */
+  .flux-input {
+    @apply w-full bg-surface-container-high text-on-surface placeholder-on-surface-variant
+           rounded-md px-4 py-3.5 outline-none transition-all duration-200
+           focus:bg-surface-container-highest focus:ring-1 focus:ring-primary/30;
+  }
+
+  /* ── Primary button ── */
+  .btn-primary {
+    @apply primary-gradient text-on-primary font-bold font-headline rounded-md
+           px-6 py-3 transition-all duration-200
+           hover:opacity-90 hover:scale-[1.02] active:scale-95
+           shadow-primary;
+  }
+
+  /* ── Secondary button ── */
+  .btn-secondary {
+    @apply bg-surface-container-highest text-primary font-bold font-headline rounded-md
+           px-6 py-3 transition-all duration-200
+           hover:bg-surface-container-high active:scale-95;
+  }
+
+  /* ── Ghost button ── */
+  .btn-ghost {
+    @apply text-on-surface-variant font-bold font-headline
+           px-6 py-3 rounded-md transition-all duration-200
+           hover:text-on-surface hover:bg-surface-container;
+  }
+
+  /* ── Study set card ── */
+  .study-card {
+    @apply flex flex-col bg-surface-container rounded-xl p-8
+           hover:bg-surface-container-high transition-all duration-300
+           relative overflow-hidden cursor-pointer;
+  }
+
+  /* ── Sidebar nav item ── */
+  .nav-item {
+    @apply flex items-center gap-4 px-4 py-3 rounded-lg
+           text-on-surface-variant font-headline font-medium
+           hover:bg-surface-container-high hover:text-on-surface
+           transition-all duration-150 active:translate-x-0.5;
+  }
+
+  .nav-item.active {
+    @apply text-primary bg-surface-container-highest/50;
+    border-right: 2px solid #9392ff;
+  }
+
+  /* ── Mastery badge ── */
+  .mastery-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold tracking-wide uppercase;
+  }
+
+  /* ── Modal backdrop ── */
+  .modal-backdrop {
+    @apply fixed inset-0 z-50 flex items-center justify-center;
+    background: rgba(6, 14, 32, 0.85);
+    backdrop-filter: blur(12px);
+  }
+}
+
+/* ── Quiz answer states ── */
+.answer-option {
+  transition: all 0.2s ease;
+}
+.answer-option.correct {
+  background-color: rgba(162, 232, 100, 0.15) !important;
+  border-color: #c3e379 !important;
+  color: #c3e379 !important;
+}
+.answer-option.incorrect {
+  background-color: rgba(253, 111, 133, 0.1) !important;
+  border-color: #fd6f85 !important;
+  color: #fd6f85 !important;
+}
+.answer-option.selected {
+  background-color: rgba(147, 146, 255, 0.12) !important;
+  border-color: #9392ff !important;
+}

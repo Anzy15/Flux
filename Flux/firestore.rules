@@ -1,0 +1,51 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ── Helper: is the request from a signed-in user? ──────────────
+    function isAuth() {
+      return request.auth != null;
+    }
+
+    // ── Helper: does the document belong to the requesting user? ───
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+
+    // ── users/{userId} ─────────────────────────────────────────────
+    // Users can only read/write their own profile document.
+    match /users/{userId} {
+      allow read, write: if isAuth() && isOwner(userId);
+    }
+
+    // ── studySets/{setId} ──────────────────────────────────────────
+    // Users can create, read, update, and delete only their own sets.
+    match /studySets/{setId} {
+      allow create: if isAuth() 
+                    && request.resource.data.userId == request.auth.uid
+                    && request.resource.data.title.size() <= 200
+                    && request.resource.data.items.size() <= 1000;
+      allow read, update, delete: if isAuth() && resource.data.userId == request.auth.uid;
+    }
+
+    // ── flashcardSessions/{sessionId} ─────────────────────────────
+    // Users can create and read only their own session records.
+    match /flashcardSessions/{sessionId} {
+      allow create: if isAuth() && request.resource.data.userId == request.auth.uid;
+      allow read: if isAuth() && resource.data.userId == request.auth.uid;
+    }
+
+    // ── quizAttempts/{attemptId} ───────────────────────────────────
+    // Users can create and read only their own attempt records.
+    match /quizAttempts/{attemptId} {
+      allow create: if isAuth() && request.resource.data.userId == request.auth.uid;
+      allow read: if isAuth() && resource.data.userId == request.auth.uid;
+    }
+
+    // Deny everything else by default.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
