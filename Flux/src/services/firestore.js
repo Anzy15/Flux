@@ -6,7 +6,7 @@ import { db } from './firebase'
 
 // ─── Study Sets ──────────────────────────────────────────────────
 
-export async function createStudySet(userId, { title, sourceFileName, type, quizFormat, items }) {
+export async function createStudySet(userId, { title, sourceFileName, type, quizFormat, items, sourceText }) {
   const ref = await addDoc(collection(db, 'studySets'), {
     userId,
     title,
@@ -14,6 +14,7 @@ export async function createStudySet(userId, { title, sourceFileName, type, quiz
     type,
     quizFormat:      quizFormat || null,
     items,
+    sourceText:      sourceText || null,
     createdAt:       serverTimestamp(),
     lastStudied:     null,
     masteryPercent:  0,
@@ -53,6 +54,13 @@ export async function updateStudySetMastery(setId, masteryPercent) {
 
 export async function deleteStudySet(setId) {
   await deleteDoc(doc(db, 'studySets', setId))
+}
+
+export async function updateStudySetItems(setId, items) {
+  await updateDoc(doc(db, 'studySets', setId), {
+    items,
+    lastStudied: serverTimestamp(),
+  })
 }
 
 // ─── Flashcard Sessions ───────────────────────────────────────────

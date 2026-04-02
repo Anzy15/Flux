@@ -28,7 +28,8 @@ const TYPE_OPTIONS = [
 const FORMAT_OPTIONS = [
   { id: 'multiple-choice', icon: 'checklist',    label: 'Multiple Choice', desc: 'Four options — one correct answer.' },
   { id: 'true-false',      icon: 'toggle_on',    label: 'True / False',    desc: 'Quick binary questions for fast review.' },
-  { id: 'mix',             icon: 'shuffle',      label: 'Mix',             desc: 'A blend of multiple choice and true/false.' },
+  { id: 'identification',  icon: 'keyboard',     label: 'Identification',  desc: 'Type the correct answer from memory. Answers are 1-3 words.' },
+  { id: 'mix',             icon: 'shuffle',      label: 'Mix',             desc: 'A blend of all question types.' },
 ]
 
 const STATUS_MESSAGES = [
@@ -104,6 +105,7 @@ export default function ConvertModal({ open, file, onClose }) {
         type,
         quizFormat: type === 'quiz' ? format : null,
         items,
+        sourceText: text.slice(0, 150000),
       })
 
       clearInterval(interval)

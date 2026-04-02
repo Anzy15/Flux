@@ -81,15 +81,26 @@ export default function StudySetCard({ set, onDeleted, wide = false }) {
         </div>
       </div>
 
-      {/* Study button */}
-      <Link
-        to={`${style.path}/${set.id}`}
-        className="mt-6 w-full flex items-center justify-center gap-2 py-2.5 rounded-md bg-surface-container-high text-primary text-sm font-bold font-headline hover:bg-primary hover:text-on-primary transition-all duration-200"
-        onClick={e => e.stopPropagation()}
-      >
-        <span className="material-symbols-outlined text-base">play_arrow</span>
-        Study Now
-      </Link>
+      {/* Actions */}
+      <div className="mt-6 flex gap-2">
+        <Link
+          to={`${style.path}/${set.id}?mode=review`}
+          className="flex flex-1 items-center justify-center gap-1.5 py-2.5 rounded-md bg-transparent border-2 border-surface-container-high text-on-surface-variant text-sm font-bold font-headline hover:border-primary hover:text-primary transition-all duration-200"
+          onClick={e => e.stopPropagation()}
+          title="Review Content"
+        >
+          <span className="material-symbols-outlined text-[18px]">visibility</span>
+          Review
+        </Link>
+        <Link
+          to={`${style.path}/${set.id}`}
+          className="flex flex-[2] items-center justify-center gap-1.5 py-2.5 rounded-md bg-surface-container-high text-primary text-sm font-bold font-headline hover:bg-primary hover:text-on-primary transition-all duration-200"
+          onClick={e => e.stopPropagation()}
+        >
+          <span className="material-symbols-outlined text-[18px]">play_arrow</span>
+          Study Now
+        </Link>
+      </div>
     </div>
   )
 
