@@ -101,3 +101,34 @@ ${pdfText.slice(0, 150000)}
   if (!Array.isArray(questions)) throw new Error('Groq did not return an array of questions')
   return questions
 }
+
+export async function extractExamQuestions(textChunk) {
+  const prompt = `
+You are an expert exam extractor. You are provided with text extracted from a PDF that contains a list of questions and answers. 
+Your task is to aggressively extract ALL questions along with their corresponding answers from this text chunk.
+
+Rules:
+- If a question is multiple choice, extract the options.
+- If the correct answer is not explicitly highlighted or obvious, choose the best possible answer based on the context of the question.
+- Format your response strictly as a JSON object with a single key "questions" containing an array of objects.
+- Each object should be formatted exactly as:
+  {"question": "...", "options": ["...", "...", "...", "..."], "answer": "...", "type": "multiple-choice"}
+- If there are no options provided in the text and it's a fill-in-the-blank or direct Q&A, format it as:
+  {"question": "...", "options": [], "answer": "...", "type": "identification"}
+- Do NOT hallucinate questions. Only extract what is explicitly in the text.
+
+Text:
+${textChunk}
+`;
+
+  const completion = await groq.chat.completions.create({
+    messages: [{ role: 'user', content: prompt }],
+    model: 'llama-3.1-8b-instant', // Switch to 8B model to bypass 100k TPD limit on 70B
+    response_format: { type: 'json_object' },
+    temperature: 0.1
+  });
+
+  const raw = completion.choices[0]?.message?.content || '{"questions":[]}';
+  const parsed = JSON.parse(cleanJSON(raw));
+  return parsed.questions || [];
+}

@@ -30,7 +30,7 @@ export default function Sidebar({ onUploadClick }) {
       {/* Nav items */}
       <nav className="flex flex-col gap-1">
         {navItems.map(item => {
-          const active = location.pathname === item.to
+          const active = location.pathname === item.to || (item.to === '/admin-exams' && location.pathname.startsWith('/admin-exams'))
           return (
             <Link
               key={item.to}
@@ -42,6 +42,15 @@ export default function Sidebar({ onUploadClick }) {
             </Link>
           )
         })}
+        {(currentUser?.email === import.meta.env.VITE_ADMIN_EMAIL || import.meta.env.VITE_ADMIN_EMAIL === undefined) && (
+          <Link
+            to={'/admin-exams'}
+            className={`nav-item ${location.pathname.startsWith('/admin-exams') ? 'active' : ''}`}
+          >
+            <span className="material-symbols-outlined text-xl">admin_panel_settings</span>
+            <span>Mock Exams</span>
+          </Link>
+        )}
       </nav>
 
       {/* Upload CTA */}

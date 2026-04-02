@@ -12,6 +12,8 @@ import Quiz      from './pages/Quiz'
 import Library   from './pages/Library'
 import Recent    from './pages/Recent'
 import Settings  from './pages/Settings'
+import MockExams from './pages/MockExams'
+import TakeMockExam from './pages/TakeMockExam'
 
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth()
@@ -98,6 +100,18 @@ export default function App() {
       <Route path="/quiz/:setId" element={
         <ProtectedRoute>
           <AppLayout><Quiz /></AppLayout>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/admin-exams" element={
+        <ProtectedRoute>
+          <AppLayout><MockExams /></AppLayout>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/admin-exams/:examId" element={
+        <ProtectedRoute>
+          <AppLayout><TakeMockExam /></AppLayout>
         </ProtectedRoute>
       } />
 
