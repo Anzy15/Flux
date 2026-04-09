@@ -15,6 +15,8 @@ export default function TakeMockExam() {
   );
 
   const [questions, setQuestions] = useState([]);
+  const [originalData, setOriginalData] = useState([]);
+  const [isShuffleEnabled, setIsShuffleEnabled] = useState(true);
   const [state, setState] = useState(STATES.LOADING);
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState([]);
@@ -31,12 +33,8 @@ export default function TakeMockExam() {
         const data = module.default || module;
         
         if (Array.isArray(data) && data.length > 0) {
-          const shuffledData = [...data];
-          for (let i = shuffledData.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [shuffledData[i], shuffledData[j]] = [shuffledData[j], shuffledData[i]];
-          }
-          setQuestions(shuffledData);
+          setOriginalData(data);
+          setQuestions(data);
           setState(STATES.READY);
         } else {
           setState(STATES.ERROR);
@@ -54,14 +52,14 @@ export default function TakeMockExam() {
   }
 
   function startExam() {
-    setQuestions(prev => {
-      const shuffled = [...prev];
-      for (let i = shuffled.length - 1; i > 0; i--) {
+    let finalQuestions = [...originalData];
+    if (isShuffleEnabled) {
+      for (let i = finalQuestions.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        [finalQuestions[i], finalQuestions[j]] = [finalQuestions[j], finalQuestions[i]];
       }
-      return shuffled;
-    });
+    }
+    setQuestions(finalQuestions);
     setIdx(0);
     setSelected([]);
     setConfirmed(false);
@@ -162,7 +160,18 @@ export default function TakeMockExam() {
         <div className="panel text-center p-10">
           <div className="text-6xl mb-6">📝</div>
           <h1 className="text-3xl font-bold text-white mb-2">{examId === 'csa_exam' ? 'CSA Exam' : 'CAD Exam'}</h1>
-          <p className="text-surface-400 mb-8">{questions.length} accurately extracted questions ready for practice.</p>
+          <p className="text-surface-400 mb-8">{originalData.length} accurately extracted questions ready for practice.</p>
+
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <span className="font-medium text-surface-200">Shuffle Questions</span>
+            <button 
+              onClick={() => setIsShuffleEnabled(!isShuffleEnabled)}
+              className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none ${isShuffleEnabled ? 'bg-primary' : 'bg-surface-600'}`}
+            >
+              <span className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${isShuffleEnabled ? 'translate-x-6' : 'translate-x-1'}`} />
+            </button>
+          </div>
+
           <button onClick={startExam} className="btn-primary w-full py-4 text-lg">Start Exam Session</button>
         </div>
       </div>
