@@ -31,7 +31,12 @@ export default function TakeMockExam() {
         const data = module.default || module;
         
         if (Array.isArray(data) && data.length > 0) {
-          setQuestions(data);
+          const shuffledData = [...data];
+          for (let i = shuffledData.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffledData[i], shuffledData[j]] = [shuffledData[j], shuffledData[i]];
+          }
+          setQuestions(shuffledData);
           setState(STATES.READY);
         } else {
           setState(STATES.ERROR);
@@ -49,6 +54,14 @@ export default function TakeMockExam() {
   }
 
   function startExam() {
+    setQuestions(prev => {
+      const shuffled = [...prev];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    });
     setIdx(0);
     setSelected([]);
     setConfirmed(false);
