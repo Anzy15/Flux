@@ -26,7 +26,7 @@ export default function MockExams() {
   const exams = [
     {
       id: 'csa_exam',
-      title: 'CSA Exam (157 Qs)',
+      title: 'CSA Exam',
       description: 'Reviewer questions based on the CSA Document.',
       icon: '🏛️'
     },

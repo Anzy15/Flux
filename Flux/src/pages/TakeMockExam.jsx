@@ -76,9 +76,17 @@ export default function TakeMockExam() {
   }
 
   function getExpectedOptions(q) {
-    if (q.type === 'identification' || !q.options || q.options.length === 0) return [q.answer];
+    if (q.type === 'identification' || !q.options || q.options.length === 0) {
+      return Array.isArray(q.answer) ? q.answer : [q.answer];
+    }
+    
+    if (Array.isArray(q.answer)) {
+      return q.answer;
+    }
+
     // Find all options that uniquely appear in the correct answer string from the AI
-    const match = q.options.filter(opt => q.answer.toLowerCase().includes(opt.toLowerCase()));
+    const rawAnswer = (q.answer || '').toLowerCase();
+    const match = q.options.filter(opt => rawAnswer.includes(opt.toLowerCase()));
     return match.length > 0 ? match : [q.answer];
   }
 
@@ -88,7 +96,8 @@ export default function TakeMockExam() {
     
     if (q.type === 'identification' || !q.options || q.options.length === 0) {
       const normalize = (s) => (s||'').toLowerCase().replace(/[^a-z0-9]/g, '');
-      correct = normalize(selected[0]) === normalize(q.answer);
+      const actualAnswer = Array.isArray(q.answer) ? q.answer[0] : q.answer;
+      correct = normalize(selected[0]) === normalize(actualAnswer);
     } else {
       const expected = getExpectedOptions(q);
       correct = selected.length === expected.length && expected.every(e => selected.includes(e));
@@ -210,7 +219,8 @@ export default function TakeMockExam() {
             let isCorrect = false;
             if (q.type === 'identification' || !q.options || q.options.length === 0) {
               const normalize = (s) => (s||'').toLowerCase().replace(/[^a-z0-9]/g, '');
-              isCorrect = normalize(selected[0]) === normalize(q.answer);
+              const actualAnswer = Array.isArray(q.answer) ? q.answer[0] : q.answer;
+              isCorrect = normalize(selected[0]) === normalize(actualAnswer);
             } else {
               isCorrect = selected.length === expected.length && expected.every(e => selected.includes(e));
             }
@@ -225,7 +235,7 @@ export default function TakeMockExam() {
                       <p className="text-surface-300">The correct answer is: <span className="text-white font-bold">{expected.join(', ')}</span></p>
                     )}
                     {!isCorrect && q.type === 'identification' && (
-                      <p className="text-surface-300">The correct answer is: <span className="text-white font-bold">{q.answer}</span></p>
+                      <p className="text-surface-300">The correct answer is: <span className="text-white font-bold">{Array.isArray(q.answer) ? q.answer.join(', ') : q.answer}</span></p>
                     )}
                   </div>
                 </div>

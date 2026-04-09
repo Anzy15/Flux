@@ -1,6 +1,6 @@
 [
   {
-    "question": "What section on a task record would you use to see the most recent update made to a record?",
+    "question": "NIGANA SIYA TEST - What section on a task record would you use to see the most recent update made to a record?",
     "options": [
       "Journal",
       "Timeline",
@@ -9,7 +9,9 @@
       "diary",
       "activity"
     ],
-    "answer": "Journal",
+    "answer": [
+      "Journal"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -22,7 +24,12 @@
       "list control",
       "lists overwrite"
     ],
-    "answer": "List buttons, list context menu, list choices, list links",
+    "answer": [
+      "List buttons",
+      "list context menu",
+      "list choices",
+      "list links"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -34,7 +41,9 @@
       "action sets",
       "task flows"
     ],
-    "answer": "Flows",
+    "answer": [
+      "Flows"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -46,7 +55,9 @@
       "trigger runtime value",
       "input runtime value"
     ],
-    "answer": "data pill runtime value",
+    "answer": [
+      "data pill runtime value"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -57,7 +68,9 @@
       "create record producer",
       "create on boarding bot"
     ],
-    "answer": "create record producer",
+    "answer": [
+      "create order guide"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -69,7 +82,9 @@
       "knowledge author group",
       "KB author group"
     ],
-    "answer": "User criteria diagnostics",
+    "answer": [
+      "User criteria diagnostics"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -81,7 +96,9 @@
       "any user with an articles for permalink",
       "any active user"
     ],
-    "answer": "any active user",
+    "answer": [
+      "any active user"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -92,7 +109,10 @@
       "right click on priority and select configure display settings",
       "right click on priority and select configure column"
     ],
-    "answer": "right click on priority and select configure dictionary, right click on priority and select configure label",
+    "answer": [
+      "right click on priority and select configure dictionary",
+      "right click on priority and select configure label"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -105,7 +125,9 @@
       "can write",
       "can import"
     ],
-    "answer": "Sn_Knowledge_import",
+    "answer": [
+      "can contribute"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -117,7 +139,9 @@
       "approval policies",
       "approval definitions"
     ],
-    "answer": "state life cycle",
+    "answer": [
+      "workflows"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -128,7 +152,9 @@
       "it automates the loading of the ci dependency view.",
       "makes relating CIs easier, because predefined relationship suggests which type of CIs should be"
     ],
-    "answer": "makes relating CIs easier, because predefined relationship suggests which type of CIs should be",
+    "answer": [
+      "it automates the loading of the ci dependency view."
+    ],
     "type": "multiple-choice"
   },
   {
@@ -139,7 +165,9 @@
       "click down arrow, view relationship",
       "Hover on connection line"
     ],
-    "answer": "Click on the plus to expand cluster",
+    "answer": [
+      "Hover on connection line"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -152,7 +180,9 @@
       "Ecmdb_rel_ci",
       "Ecmdb_ci"
     ],
-    "answer": "Cmdb_ci",
+    "answer": [
+      "cmdb"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -163,7 +193,9 @@
       "transform table",
       "import set row table"
     ],
-    "answer": "import set row table",
+    "answer": [
+      "import set row table"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -174,7 +206,9 @@
       "coalesce fields",
       "key fields"
     ],
-    "answer": "Sys IDs",
+    "answer": [
+      "coalesce fields"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -185,7 +219,9 @@
       "import map",
       "transform map"
     ],
-    "answer": "import map",
+    "answer": [
+      "transform map"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -196,7 +232,9 @@
       "Offering. Name",
       "Offering"
     ],
-    "answer": "Offering",
+    "answer": [
+      "Offering. None"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -208,7 +246,9 @@
       "scheduled reports and excel",
       "key performance indicators."
     ],
-    "answer": "performance analytics.",
+    "answer": [
+      "performance analytics."
+    ],
     "type": "multiple-choice"
   },
   {
@@ -220,7 +260,9 @@
       "item",
       "element"
     ],
-    "answer": "Field",
+    "answer": [
+      "Field"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -232,7 +274,9 @@
       "Preview",
       "try it"
     ],
-    "answer": "Run",
+    "answer": [
+      "Run"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -244,7 +288,9 @@
       "Style",
       "group by"
     ],
-    "answer": "Data",
+    "answer": [
+      "Configure"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -256,7 +302,9 @@
       "audit log",
       "diary"
     ],
-    "answer": "Journal",
+    "answer": [
+      "Activity"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -268,7 +316,9 @@
       "on who will receive tab, select copy manager checkbox.",
       "on who will receive tab, add caller field, dot walk to caller’s Ma nager to add managers."
     ],
-    "answer": "on the send to tab, add caller field, dot walk to caller’s manager to add manager.",
+    "answer": [
+      "on who will receive tab, add caller field, dot walk to caller’s Ma nager to add managers."
+    ],
     "type": "multiple-choice"
   },
   {
@@ -280,7 +330,10 @@
       "Their user account does not have ITIL role",
       "That user account failed LDAP authentication"
     ],
-    "answer": "b, d",
+    "answer": [
+      "That user account does not belong to any group which contains the ITIL role",
+      "Their user account does not have ITIL role"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -292,7 +345,9 @@
       "Calendar",
       "Escalation"
     ],
-    "answer": "c",
+    "answer": [
+      "Assignment"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -303,7 +358,9 @@
       "Banner image, banner text",
       "Company name, company logo, colour scheme"
     ],
-    "answer": "a",
+    "answer": [
+      "Banner image, banner text"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -315,7 +372,9 @@
       "Add _tap to the end of the section name",
       "Name the section"
     ],
-    "answer": "b",
+    "answer": [
+      "Name the section"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -327,7 +386,9 @@
       "On the list, locate and right click on the value Hardware, select show matching",
       "On the category column header, right click and select show > hardware"
     ],
-    "answer": "c",
+    "answer": [
+      "On the list, locate and right click on the value Hardware, select show matching"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -339,7 +400,9 @@
       "A team of users",
       "A correction of users"
     ],
-    "answer": "c",
+    "answer": [
+      "A team of users"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -350,7 +413,9 @@
       "Take a ServiceNow performance analytics course on Now Learning",
       "Activate the plugin on your production environment and start the default data collectors"
     ],
-    "answer": "c",
+    "answer": [
+      "Take a ServiceNow performance analytics course on Now Learning"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -362,7 +427,9 @@
       "Click personalise icon and select activity stream",
       "Right click form header > form layout > add work note section"
     ],
-    "answer": "a",
+    "answer": [
+      "Click funnel icon and select only work notes"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -373,7 +440,9 @@
       "Create the inventory table with the inventory specification fields. Then create many to many relationships between the inventory and the task table",
       "Create inventory table as an extended table from the task table. Then add the inventory specification fields, as needed"
     ],
-    "answer": "d",
+    "answer": [
+      "Create inventory table as an extended table from the task table. Then add the inventory specification fields, as needed"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -385,7 +454,9 @@
       "Click on context menu and select insert and stay",
       "Click on the funnel icon and create copy"
     ],
-    "answer": "d",
+    "answer": [
+      "Click on the down triangle and select insert and stay"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -396,7 +467,9 @@
       "On the knowledge base, create an HR manager category, add user criteria for HR manager group on the categories can read list, then publish the article to that category",
       "On the knowledge article, add user criteria for HR manager group on the can read list, then publish article to any category"
     ],
-    "answer": "c",
+    "answer": [
+      "On the knowledge base, create an HR manager category, add user criteria for HR manager group on the categories can read list, then publish the article to that category"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -408,7 +481,9 @@
       "Bob Smith is a VIP",
       "Bob Smith does not have a delegate set up on his account"
     ],
-    "answer": "b",
+    "answer": [
+      "Bob Smith is a VIP"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -420,7 +495,9 @@
       "Reports > view/run",
       "Self-service > my dashboards"
     ],
-    "answer": "a",
+    "answer": [
+      "Reports > view/run"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -434,7 +511,10 @@
       "Keep update set logs shorter",
       "Make it easier for developers to organize their work"
     ],
-    "answer": "b, e",
+    "answer": [
+      "Reduce potential conflicts",
+      "Make it easier to identify and review changes"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -446,7 +526,9 @@
       "scope and trigger condition",
       "trigger criteria and clock"
     ],
-    "answer": "Trigger and condition",
+    "answer": [
+      "Trigger and condition"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -458,7 +540,9 @@
       "dictionary design",
       "form constraint"
     ],
-    "answer": "UI policy and actions",
+    "answer": [
+      "UI policy and actions"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -472,7 +556,9 @@
       "process automation designer",
       "process flow manager"
     ],
-    "answer": "Workflow manager",
+    "answer": [
+      "process automation designer"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -485,7 +571,9 @@
       "transform maps",
       "UI policies and client scripts"
     ],
-    "answer": "UI policies and client scripts",
+    "answer": [
+      "UI policies and client scripts"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -497,7 +585,9 @@
       "save+ update",
       "write+ read"
     ],
-    "answer": "request+ response",
+    "answer": [
+      "request+ response"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -510,7 +600,9 @@
       "user guide",
       "community"
     ],
-    "answer": "help panel (question mark Icon)",
+    "answer": [
+      "Getting started"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -521,7 +613,9 @@
       "members of the ACME Manager group, who are also members of HR departments and part of ACME North America",
       "users which are members of either ACME North America, or HR department or ACME Managers group"
     ],
-    "answer": "members of the ACME Manager group, who are also members of HR departments and part of ACME North America",
+    "answer": [
+      "members of the ACME Manager group, who are also members of HR departments and part of ACME North America"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -533,7 +627,9 @@
       "Funnel",
       "Query"
     ],
-    "answer": "Filter",
+    "answer": [
+      "Filter"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -547,8 +643,8 @@
       "from the record form header, click paperclip icon"
     ],
     "answer": [
-      "from the record related links, click add favourites",
-      "from the record form header, click the star icon"
+      "from the record form header, click additional action menus and select create favourite",
+      "from list, drag record number to favourites on the navigator"
     ],
     "type": "multiple-choice"
   },
@@ -561,7 +657,9 @@
       "government customers",
       "security incident response users"
     ],
-    "answer": "Extended security admin",
+    "answer": [
+      "Extended security admin"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -573,7 +671,9 @@
       "a attribute",
       "a Field"
     ],
-    "answer": "a Field",
+    "answer": [
+      "a Field"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -585,7 +685,9 @@
       "text",
       "string"
     ],
-    "answer": "single line text",
+    "answer": [
+      "string"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -598,7 +700,9 @@
       "instance logo",
       "user menu"
     ],
-    "answer": "instance logo",
+    "answer": [
+      "instance logo"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -610,7 +714,9 @@
       "Admin",
       "Security_admin"
     ],
-    "answer": "High_sec_admin",
+    "answer": [
+      "Security_admin"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -622,7 +728,9 @@
       "human resource and enterprise CMDB",
       "security operations and vulnerability response"
     ],
-    "answer": "High security and human resources",
+    "answer": [
+      "human resources and security operations"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -633,7 +741,9 @@
       "select approval record by checking box, click on green check",
       "right click on the approval number, select approved, click green check"
     ],
-    "answer": "select approval record by checking box, click on green check",
+    "answer": [
+      "select approval record by checking box, click on green check"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -654,11 +764,1350 @@
       "default homepage"
     ],
     "answer": [
-      "default calendar",
-      "default region",
       "base theme",
-      "preferred browser",
-      "banner image"
+      "banner image",
+      "browser tab title",
+      "module text colour",
+      "header background colour"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What would you do, on a list, if you wanted to show records in groups, based on the column category?",
+    "options": [
+      "On list Context Menu, select Group By > Category",
+      "On the Filter Menu, select Group By > Category",
+      "Click Group On icon, select Category",
+      "On Navigator Filter, type tablename.group.category and press enter.",
+      "On the Category column table, click Context menu > Group By Category"
+    ],
+    "answer": [
+      "On list Context Menu, select Group By > Category",
+      "On the Category column table, click Context menu > Group By Category"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When importing spreadsheet data into ServiceNow, in which step does the data get written to the receiving table?",
+    "options": [
+      "Run Transform",
+      "Run Import",
+      "Import Dataset",
+      "Execute Transform",
+      "Schedule Transform"
+    ],
+    "answer": [
+      "Run Transform"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the steps for applying an update set to an instance?",
+    "options": [
+      "Retrieve, Preview, Commit",
+      "Specify, Transform, Apply",
+      "Retrieve, Assess, Apply",
+      "Get, Test, Push",
+      "Pull, Review, Push"
+    ],
+    "answer": [
+      "Retrieve, Preview, Commit"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A department manager asks an analyst to build some reports. Where do you recommend the analyst start?",
+    "options": [
+      "Report Dashboard > Create New",
+      "Reports > Getting Started",
+      "Performance Analytics > Reports",
+      "Reports > Create New"
+    ],
+    "answer": [
+      "Reports > Create New"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "If a knowledge base has no access details specified what users are able to read articles in that knowledge base?",
+    "options": [
+      "itil user",
+      "Any user with an article's permalink",
+      "Any active user",
+      "No users",
+      "Users with kb_user role"
+    ],
+    "answer": [
+      "Any active user"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which application is used primarily to load data into ServiceNow?",
+    "options": [
+      "Import Hub",
+      "System Import Sets",
+      "Data Import Configure",
+      "Import Management"
+    ],
+    "answer": [
+      "System Import Sets"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "On what part of the ServiceNow instance would you find the option to Impersonate User?",
+    "options": [
+      "Module",
+      "Content Frame",
+      "Application",
+      "Banner"
+    ],
+    "answer": [
+      "Banner"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the best practice related to using the Default Update Set for moving customizations between instances?",
+    "options": [
+      "Merge Default update sets before moving between instances",
+      "Submit Default update set to application repository",
+      "You should not use the Default Update sets for moving between instances",
+      "Keep Default update set to maximum of 20 records, for troubleshooting purposes."
+    ],
+    "answer": [
+      "You should not use the Default Update sets for moving between instances"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the three key tables in an enterprise CMBD?",
+    "options": [
+      "cmdb",
+      "sn_cmdb_bak",
+      "cmdb_rel_ci",
+      "sn_cmdb",
+      "cmdb_bak",
+      "cmdb_ci",
+      "sn_cmdb_ci"
+    ],
+    "answer": [
+      "cmdb",
+      "cmdb_rel_ci",
+      "cmdb_ci"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is used to determine user access to knowledge bases or a knowledge article?",
+    "options": [
+      "sn_kb_read sn_article_read",
+      "Privacy Settings",
+      "Read Access Flag",
+      "User Criteria"
+    ],
+    "answer": [
+      "User Criteria"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the main components of the Form Design Interface? (Choose 3)",
+    "options": [
+      "Field Layout",
+      "Page Header",
+      "Field Navigator",
+      "Field Picker",
+      "Form Layout"
+    ],
+    "answer": [
+      "Page Header",
+      "Field Navigator",
+      "Form Layout"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which tab on the knowledge base record, would you use to identify the sets of users who are able to read articles in that knowledge base?",
+    "options": [
+      "Access List",
+      "Can Access",
+      "Accessible to",
+      "Can Read"
+    ],
+    "answer": [
+      "Can Read"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are examples of Core tables in the ServiceNow platform?",
+    "options": [
+      "Configuration, Connect, Chat",
+      "Team, Party, Awards",
+      "User, Task, Incident",
+      "Work, Caller, Time"
+    ],
+    "answer": [
+      "User, Task, Incident"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which tool graphically displays an infrastructure view for a configuration item (CI) and its relationship with other CIs?",
+    "options": [
+      "Schema Map",
+      "Dependency View",
+      "Dependency Map",
+      "Database View"
+    ],
+    "answer": [
+      "Dependency View"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the result of the order in which access controls are evaluated?",
+    "options": [
+      "Ensures user has access to the fields in a table, before considering their access to the table",
+      "Ensures user can get to work as quickly as possible",
+      "Ensure user has access to the application, before evaluating access to a module within the application",
+      "Ensures user has access to a table, before evaluating access to a field in the table"
+    ],
+    "answer": [
+      "Ensures user has access to a table, before evaluating access to a field in the table"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "You are asked to create an option in the Service Catalog, which will allow a user to click Get Help and describe the issue they are having. These formats should create incident records, which are automatically routed to the Service Desk. Which method would you use?",
+    "options": [
+      "Create Record Producer",
+      "Create Catalog Item",
+      "Create Order Guide",
+      "Create Content Item"
+    ],
+    "answer": [
+      "Create Record Producer"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which field or fields is used as a unique key during imports?",
+    "options": [
+      "Match fields",
+      "Coalesce fields",
+      "Key fields",
+      "Sys IDs"
+    ],
+    "answer": [
+      "Coalesce fields"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What attributes can you manage using System Properties > Basic Configuration UI16? (Choose 5)",
+    "options": [
+      "Browser tab title",
+      "Module text color",
+      "Preferred browser",
+      "Base theme",
+      "Font style",
+      "Animation style",
+      "Header background color",
+      "Banner Image"
+    ],
+    "answer": [
+      "Browser tab title",
+      "Module text color",
+      "Base theme",
+      "Header background color",
+      "Banner Image"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What ServiceNow feature allows you to include data from a secondary related table on a report?",
+    "options": [
+      "SQL",
+      "Dot Walking",
+      "Outer Join",
+      "Joins"
+    ],
+    "answer": [
+      "Dot Walking"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are benefits of assigning work tasks to a group rather than to an individual? Choose 4",
+    "options": [
+      "Group members can choose their tasks from My Groups Work",
+      "Groups can assign tasks to users based on on-call schedules",
+      "Site support members can pick tasks based on Location",
+      "Groups can assign tasks to users based on skill",
+      "Group members can avoid tasks, which are nearing SLA breach",
+      "Groups can assign tasks to users based on availability"
+    ],
+    "answer": [
+      "Group members can choose their tasks from My Groups Work",
+      "Groups can assign tasks to users based on on-call schedules",
+      "Groups can assign tasks to users based on skill",
+      "Groups can assign tasks to users based on availability"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement correctly describes the differences between a Client Script and a Business Rule?",
+    "options": [
+      "A client script executes before a record is loaded and a Business Rule executes after a record is loaded",
+      "A client script executes on the server and a Business Rule executes on the client",
+      "A client script executes on the client and a Business Rule executes on the server",
+      "A client script executes before a record is loaded and a Business Rule executes after a record is updated"
+    ],
+    "answer": [
+      "A client script executes on the client and a Business Rule executes on the server"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which role can manage multiple knowledge bases?",
+    "options": [
+      "knowledge_base_admin",
+      "kb_admin",
+      "sn_kb_admin",
+      "knowledge_admin"
+    ],
+    "answer": [
+      "knowledge_admin"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which ServiceNow capability allows you to provide knowledge articles, via a conversational messaging interface?",
+    "options": [
+      "Agent Assist",
+      "Virtual Agent",
+      "Now Messenger",
+      "Now Chat"
+    ],
+    "answer": [
+      "Virtual Agent"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What ServiceNow feature can be triggered by events and is used to inform users about activities or updates in ServiceNow?",
+    "options": [
+      "Notifications",
+      "Alerts",
+      "Texts",
+      "Events",
+      "Emails"
+    ],
+    "answer": [
+      "Notifications",
+      "Alerts"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "User records are stored in which table?",
+    "options": [
+      "user [sys_user]",
+      "user [sn_user]",
+      "user [u_sys_user]",
+      "user [s_user]"
+    ],
+    "answer": [
+      "user [sys_user]"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What type of field has a drop down list from which you can pick from pre-defined options?",
+    "options": [
+      "Choice",
+      "Picker",
+      "Drop down",
+      "Option"
+    ],
+    "answer": [
+      "Choice"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which component of a table contains a piece of data for one record?",
+    "options": [
+      "Factor",
+      "Field",
+      "Datapoint",
+      "Element",
+      "Item"
+    ],
+    "answer": [
+      "Field"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What feature do you use to specify which users are able to access a Service Catalog Item?",
+    "options": [
+      "Can Read Role",
+      "Catalog User Role",
+      "Can Order Tab",
+      "User Criteria"
+    ],
+    "answer": [
+      "User Criteria"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the most common role that has access to almost all platform features, functions, and data?",
+    "options": [
+      "Security Admin [security_admin]",
+      "Sys Admin [sys_admin]",
+      "Admin [sn_admin]",
+      "System Administrator [admin]",
+      "Base Admin [base_admin]"
+    ],
+    "answer": [
+      "System Administrator [admin]"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When importing data what happens to imported rows if no coalesce field is specified?",
+    "options": [
+      "All rows are rejected from the import, as coalesce field is required",
+      "All rows are treated as new records. No existing records are updated",
+      "Duplicate rows are rejected from the imports",
+      "All rows are treated as new records but errors will be flagged in the import log."
+    ],
+    "answer": [
+      "All rows are treated as new records. No existing records are updated"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "The wait time for end users is based on the round-trip between the client and the server. What activities are included in the round-trips?",
+    "options": [
+      "Request + Response",
+      "Save + Update",
+      "Write + Read",
+      "Submit + Quarry",
+      "Insert + Verify"
+    ],
+    "answer": [
+      "Request + Response"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When a flow runs an action it generates a runtime value which stays the same for the duration of the flow. What is the name of this runtime value?",
+    "options": [
+      "Trigger Runtime Value",
+      "Sequence Runtime Value",
+      "Starting Runtime Value",
+      "Data Pill Runtime Value",
+      "Input Runtime Value"
+    ],
+    "answer": [
+      "Data Pill Runtime Value"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Your customer requires that they be able to monitor which users are performing impersonations in their instance. What would you do to meet that requirement?",
+    "options": [
+      "Add the role Log Write [sn_log_write] to the impersonator group",
+      "Create user update set for impersonation tracking",
+      "Activate the glide.sys.log_impersonation prop",
+      "From User icon select Elevate Roles",
+      "On the Impersonator role record right click and select Create Log"
+    ],
+    "answer": [
+      "Activate the glide.sys.log_impersonation prop"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the advantages of using Flow Designer?",
+    "options": [
+      "Supports advanced developers",
+      "Enables complicated scripting",
+      "Reduces technical debt",
+      "Less manual scripting",
+      "Smooth integration with 3rd party systems"
+    ],
+    "answer": [
+      "Reduces technical debt",
+      "Less manual scripting",
+      "Smooth integration with 3rd party systems"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A manager wants to view a snapshot of month-end Sales performance data, as compared to Sales targets. In addition, the manager wants to be able to see those monthly numbers trended over time, and forecasted into the future. What capability do you suggest for this manager?",
+    "options": [
+      "Scheduled Reports, a custom snapshot table, a Trend report",
+      "Scheduled Reports and Excel",
+      "Scheduled Reports, a custom snapshot table and a Projection report",
+      "Performance Analytics",
+      "Key Performance Indicators"
+    ],
+    "answer": [
+      "Performance Analytics"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What resource can you use to view details of the tables and configuration items (CIs) associated with a particular use case?",
+    "options": [
+      "Scenario Dashboard",
+      "CI Use Case Modeler",
+      "CMDB Use Case Modeler",
+      "Common Service Data Model (CSDM) product view"
+    ],
+    "answer": [
+      "Common Service Data Model (CSDM) product view"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A user is complaining that they are seeing a blank page, when they click Create New, from your custom Inventory application. You have confirmed that they can see the Inventory application, and the Create New module on the application navigator. What could be the cause of this issue?",
+    "options": [
+      "Create New module has a broken link",
+      "Known Intermittent issue with UI15",
+      "User should be using Chrome instead of Explorer for their browser",
+      "User has read role but not the write role on the Inventory tab",
+      "User session has timed out"
+    ],
+    "answer": [
+      "User has read role but not the write role on the Inventory tab"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A role is defined as what?",
+    "options": [
+      "A collection of permissions",
+      "A set of user access policies",
+      "A persona in a workflow",
+      "A set of access control rules"
+    ],
+    "answer": [
+      "A collection of permissions"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "On a filter condition, which component is always a choice list?",
+    "options": [
+      "Operator",
+      "Filter Criteria",
+      "Operation",
+      "Match Criteria"
+    ],
+    "answer": [
+      "Operator"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Tables may have a One to Many relationships. From the Service Catalog, what are examples of tables having a one to many relationships? (Choose three.)",
+    "options": [
+      "One Approval can have many Requests",
+      "One Request can have many Requested Items",
+      "One Requested item can have many Approvals",
+      "One Requested item can have many Catalog Tasks",
+      "One cart can have many Requests"
+    ],
+    "answer": [
+      "One Request can have many Requested Items",
+      "One Requested item can have many Approvals",
+      "One Requested item can have many Catalog Tasks"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What type of query allows you to filter list data using normal words instead of the condition builder?",
+    "options": [
+      "Natural Language Query",
+      "Alexa Query",
+      "Machine Learning Query",
+      "Predictive Intelligence Query"
+    ],
+    "answer": [
+      "Natural Language Query"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What controls the publishing and retiring process for knowledge articles?",
+    "options": [
+      "Approval Policies",
+      "Approval Definitions",
+      "Workflow Designer",
+      "Workflows",
+      "State Lifecycle"
+    ],
+    "answer": [
+      "Workflows"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When impersonating a user for testing purposes what is the best way to return the instance, logged in with your user account?",
+    "options": [
+      "Turn your computer off and on again",
+      "Clear browser cache",
+      "End Impersonation",
+      "Log out and back in"
+    ],
+    "answer": [
+      "End Impersonation"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the components that make up a filter condition? Choose 3",
+    "options": [
+      "Operator",
+      "Match Criteria",
+      "Value",
+      "Column",
+      "Field"
+    ],
+    "answer": [
+      "Operator",
+      "Value",
+      "Field"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the different types of Data Sources, which may be imported into ServiceNow? Choose 4",
+    "options": [
+      "Local Sources (XML, CSV, Excel)",
+      "Implementation Spoke",
+      "DataHub",
+      "JDBC Connection",
+      "Network Server",
+      "LDAP Connection"
+    ],
+    "answer": [
+      "Local Sources (XML, CSV, Excel)",
+      "DataHub",
+      "JDBC Connection",
+      "LDAP Connection"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "On a Business Rule, the When setting determines at what point the rule executes. What are the options for specifying that timing?",
+    "options": [
+      "Before, After, Async, Display",
+      "Prior to, Synchronous, on Update",
+      "Insert, Update, Delete, Query",
+      "Before, Synchronous, Scheduled Job, View"
+    ],
+    "answer": [
+      "Before, After, Async, Display"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What function do you use to add buttons, links, and context menu items on forms and lists?",
+    "options": [
+      "UI Policies",
+      "UI Settings",
+      "UI Actions",
+      "UI Config"
+    ],
+    "answer": [
+      "UI Actions"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Group records are stored in which table?",
+    "options": [
+      "Group [sn_user_group]",
+      "Group [sys_user_group]",
+      "Group [s_sys_group]",
+      "Group [u_sys_group]"
+    ],
+    "answer": [
+      "Group [sys_user_group]"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "On a Form Header what is the three bar icon called?",
+    "options": [
+      "Pancake Icon",
+      "Additional Actions or Context Menu",
+      "Hamburger Icon",
+      "Cake Icon"
+    ],
+    "answer": [
+      "Additional Actions or Context Menu"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the name of the table relationship, where two or more tables are related in a bi-directional relationship, so that the related records are visible from both tables in a related list?",
+    "options": [
+      "Database View",
+      "Many to Many",
+      "One to Many",
+      "Extended"
+    ],
+    "answer": [
+      "Many to Many"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "From a form, what would you click to add additional fields to the form? (Choose two.)",
+    "options": [
+      "Context Menu > Form > Layout",
+      "Context Menu > Configure > Form Layout",
+      "Context Menu > Configure > Form Design",
+      "Right click on header > Add > Field",
+      "Context Menu > Form > Designer",
+      "Right click on header > Configure > UX Dashboard"
+    ],
+    "answer": [
+      "Context Menu > Configure > Form Layout",
+      "Context Menu > Configure > Form Design"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which feature allows you to automate business logic for a particular application or process such as approvals, tasks notifications, and record operations?",
+    "options": [
+      "Flows",
+      "Action Sequences",
+      "Action Sets",
+      "Task Flows",
+      "Flow Diagrams"
+    ],
+    "answer": [
+      "Flows"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which ServiceNow capability provides assistance to help users obtain information, make decisions, and perform common work tasks via a messaging interface?",
+    "options": [
+      "Agent Workspace",
+      "Chat bot",
+      "Virtual Agent",
+      "Knowledge Chat",
+      "Now Support"
+    ],
+    "answer": [
+      "Virtual Agent"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which tool is used to define relationships between fields in an import set table and a target table?",
+    "options": [
+      "Transform Schema",
+      "Schema Map",
+      "Dictionary Map",
+      "Transform Map",
+      "Field Transformer",
+      "Import Designer"
+    ],
+    "answer": [
+      "Transform Map"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "On the Reports page, what sections allow you to see which reports are visible to different audiences? (Choose four.)",
+    "options": [
+      "Group",
+      "Department",
+      "My reports",
+      "Team",
+      "Dashboard",
+      "Global",
+      "Admin",
+      "Analytics",
+      "All",
+      "Company"
+    ],
+    "answer": [
+      "Group",
+      "My reports",
+      "Global",
+      "All"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When designing a flow, how do you reference data from a record, in that flow?",
+    "options": [
+      "Drag the table icon to the flow definition",
+      "Use the condition builder to specify the desired values",
+      "Specify the source table on the data pill related list",
+      "Drag the data pill onto the flow definition",
+      "Add the table reference using the slush bucket"
+    ],
+    "answer": [
+      "Drag the data pill onto the flow definition"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Your customer would like to create a new template to notify users who are affected by network outages at their site. Which module would you use to create a new notification?",
+    "options": [
+      "System Notifications > Email > Notifications",
+      "Administration > Notification Overview",
+      "System Properties > Email > Settings",
+      "User Preferences > Email > Notifications",
+      "Click Gear > Notifications > New"
+    ],
+    "answer": [
+      "System Notifications > Email > Notifications"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "While showing a customer their incident form, they ask to change the Priority values to display their internal terminology P1, P2, P3, P4. They want it to be consistent across all Tasks. How would you do that? Right click on Priority and select what?",
+    "options": [
+      "Configure Lists",
+      "Show Options",
+      "Configure Task",
+      "Show Choices",
+      "Show Choice List",
+      "Configure Options"
+    ],
+    "answer": [
+      "Show Choice List"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is a key difference between Reporting and Performance Analytics?",
+    "options": [
+      "Performance Analytics contains snapshots of data taken over time; Reporting shows only the data as it is, at the moment the report is run",
+      "Performance Analytics can show trends; Reports cannot",
+      "Reports can be run on a scheduled basis; Performance Analytics cannot",
+      "Performance Analytics data can be published to Dashboards; Reports cannot",
+      "Performance Analytics shows KPIs; Reporting does not"
+    ],
+    "answer": [
+      "Performance Analytics contains snapshots of data taken over time; Reporting shows only the data as it is, at the moment the report is run"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When a user reports that they are not able to see modules on the application navigator, what can you do, to see what modules are visible to them?",
+    "options": [
+      "Look up their password, so you can login with their account",
+      "Initiate a Connect Chat session",
+      "Install the Bomgar plug-in",
+      "Impersonate the user",
+      "Launch a NowChat Window"
+    ],
+    "answer": [
+      "Impersonate the user"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When you need to orchestrate business processes across services with little technical user knowledge which utility would you use?",
+    "options": [
+      "Flow Manager",
+      "Flow Designer",
+      "Flow Editor",
+      "Workflow Editor",
+      "Workflow Designer"
+    ],
+    "answer": [
+      "Flow Designer"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which module is used as the first step for importing data?",
+    "options": [
+      "Coalesce Data",
+      "Transform Data",
+      "Import Data",
+      "Load Data"
+    ],
+    "answer": [
+      "Load Data"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which module would you use to create a new automation of business logic such as approvals, tasks, and notifications?",
+    "options": [
+      "Process Automation > Flow Designer",
+      "Process Automation > Flow Administrator",
+      "Process Automation > Workflow Editor",
+      "Process Automation > Process Flow",
+      "Process Automation > Active Flows"
+    ],
+    "answer": [
+      "Process Automation > Flow Designer"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What type of field allows you to look up values from one other table?",
+    "options": [
+      "Reference",
+      "Verity",
+      "Options",
+      "Selections",
+      "Dot Walk",
+      "Lookup"
+    ],
+    "answer": [
+      "Reference"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "After finishing your work on High Security Settings what do you do to return to normal admin security levels?",
+    "options": [
+      "Select Normal Role",
+      "Log out and back in",
+      "Use System Administration > Normal Security Module",
+      "Select Global Update Set",
+      "End Impersonation"
+    ],
+    "answer": [
+      "Log out and back in"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Two departments (HR Onboarding and Facilities) have come to you, asking for a way for employees to request event room set up services. The requirements are the same for the form and the task routing to the Facilities' assignment group. However, both departments have their own service catalogs. What do you do, to support these requirements?",
+    "options": [
+      "Create one catalog item for HR Event Room Set Up and one for Facilities Event Room Set Up; then publish each to the appropriate Catalog",
+      "Create one Catalog Item for Event Room Set Up; then publish to both catalogs",
+      "Create one Catalog Item for Event Room Set Up; then publish to the Parent Catalog, which is accessible to both HR and Facilities.",
+      "Create one Catalog Item for Event Room Set Up; then use ACLs to control access"
+    ],
+    "answer": [
+      "Create one Catalog Item for Event Room Set Up; then publish to both catalogs"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Access Control rules are applied to a specific table, like the Incident table. What is the object name for a rule that is specific to the Incident table and the Major Incident field?",
+    "options": [
+      "Incident.Major_Incident",
+      "incident=>major_incident",
+      "incident<=>major_incident",
+      "incident||major_incident",
+      "incident.major_incident"
+    ],
+    "answer": [
+      "incident.major_incident"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A user wants to create a set of filter conditions, where they want to show records which satisfy two conditions: Incidents where the state is Closed and Incidents where Assignment Group is Network. After clicking the Funnel icon, what should the user do?",
+    "options": [
+      "Define the first condition; click AND button; define second condition; click Run",
+      "Define the first condition; click AND button; define second condition; press enter",
+      "Define the first condition; click OR button; define second condition; press enter",
+      "Define the first condition; click > icon on breadcrumb, define second condition; click Run",
+      "Define the first condition; click > icon on breadcrumb, define second condition; press enter"
+    ],
+    "answer": [
+      "Define the first condition; click AND button; define second condition; click Run"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A new service catalog item is being developed, but should only be visible to managers inside the HR Department. What method would you use to fulfill this requirement?",
+    "options": [
+      "Specify the Dept_Mgr role on the catalog content block",
+      "Add the Department Manager group to the catalog item's user criteria",
+      "Add the Department Manager group to the catalog item's ACL",
+      "Only publish the item in the HR service catalog",
+      "Use a Dept_Mgr ACL on the HR service catalog"
+    ],
+    "answer": [
+      "Add the Department Manager group to the catalog item's user criteria"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What do you call any component that needs to be managed in order to deliver services?",
+    "options": [
+      "CSDM Items",
+      "CMDB",
+      "Configuration item",
+      "Service Offerings",
+      "Asset"
+    ],
+    "answer": [
+      "Configuration item"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which icon would you double click, to expand and collapse the list of all Applications and Modules?",
+    "options": [
+      "Star",
+      "Clock",
+      "Application",
+      "Funnel"
+    ],
+    "answer": [
+      "Application"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is specified in an Access Control rule?",
+    "options": [
+      "Groups, Conditional Expressions and Workflows",
+      "Table Schema, CRUD, and User Authentication",
+      "Object and Operation being secured; Permissions required to access the object",
+      "security_admin"
+    ],
+    "answer": [
+      "Object and Operation being secured; Permissions required to access the object"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When moving multiple update sets at one time, what might you do to facilitate the move?",
+    "options": [
+      "Batch",
+      "Verify",
+      "Test",
+      "Preview"
+    ],
+    "answer": [
+      "Batch"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is a no-code approach to control the mandatory or read-only state of a form field?",
+    "options": [
+      "UI Action",
+      "Client Script",
+      "UI Script",
+      "UI Rule",
+      "UI Policy"
+    ],
+    "answer": [
+      "UI Policy"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When testing a catalog item, having a manager approval flows, which of these best practices would you follow? (Choose three.)",
+    "options": [
+      "Make sure the latest flows are activated.",
+      "Use the instance Incognito setting to quickly toggle between requester and approver.",
+      "Impersonate the requester to ensure the form works.",
+      "Make sure the requester's user record has a manager specified.",
+      "Create and select your Testing Update Set, before starting the test cases.",
+      "Use your Admin account, so you can approve the items quickly."
+    ],
+    "answer": [
+      "Make sure the latest flows are activated.",
+      "Impersonate the requester to ensure the form works.",
+      "Make sure the requester's user record has a manager specified."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are three security modules often used by the System Administrator? (Choose three.)",
+    "options": [
+      "System Properties > Security",
+      "Utilities > Migrate Security",
+      "System Security > Security",
+      "Self-Service > My Access",
+      "System Security > Access Control (ACL)",
+      "Password Management > Security Questions",
+      "System Security > High Security Settings"
+    ],
+    "answer": [
+      "System Properties > Security",
+      "System Security > Access Control (ACL)",
+      "System Security > High Security Settings"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A new Service Desk employee in Latin America complains that the create dates and times are incorrect on their Incident list. What would you suggest to fix this issue?",
+    "options": [
+      "Have them clear their cache",
+      "Have them use the gear icon to set the employee's time zone",
+      "Recommend they use Chrome, instead of Explorer",
+      "Use the system properties to correct the instance's time zone.",
+      "Have them correct the time zone on their computer."
+    ],
+    "answer": [
+      "Have them use the gear icon to set the employee's time zone"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "As an IT employee what interface would you use, if you wanted to browse internal IT documentation, like troubleshooting scripts and FAQs?",
+    "options": [
+      "Knowledge",
+      "ServiceNow Wiki",
+      "Knowledge Now",
+      "SharePoint",
+      "Stack Overflow"
+    ],
+    "answer": [
+      "Knowledge"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What import utility do you use when the field names on the import set match the name of the fields on the Target table?",
+    "options": [
+      "Schema Mapping",
+      "Automatic Mapping",
+      "Mapping Assist",
+      "Mapping Dashboard"
+    ],
+    "answer": [
+      "Automatic Mapping"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is a quick way to create a report from a list view?",
+    "options": [
+      "Click on filter breadcrumb, drag and drop on the Report > Create New module",
+      "Click Funnel, define filter conditions, click Create Report",
+      "Click Context Menu, select Create Report",
+      "Apply filter, right click on column header, select Bar Chart",
+      "Apply filter, right click on column header, select Create Report"
+    ],
+    "answer": [
+      "Apply filter, right click on column header, select Bar Chart"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What feature can track the amount of time that a task has been open, to ensure that tasks are completed within an allotted time?",
+    "options": [
+      "Task Evaluation Clock",
+      "Service Level Agreements",
+      "Inactivity Monitor",
+      "Response Time Clock",
+      "Business Time Remaining"
+    ],
+    "answer": [
+      "Service Level Agreements"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What needs to be specified, when creating a Business Rule? (Choose four.)",
+    "options": [
+      "UI action",
+      "Table",
+      "Fields to update",
+      "Who can run",
+      "Script to run",
+      "Application scope",
+      "Update Set",
+      "Timing",
+      "Condition to evaluate"
+    ],
+    "answer": [
+      "Table",
+      "Script to run",
+      "Timing",
+      "Condition to evaluate"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What icon do you use to change the label on a Favorite?",
+    "options": [
+      "Clock",
+      "Hamburger",
+      "Pencil",
+      "Three dots",
+      "Triangle",
+      "Star"
+    ],
+    "answer": [
+      "Pencil"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is used frequently to move customizations from one instance to another?",
+    "options": [
+      "Update Sets",
+      "Code Sets",
+      "Update Packs",
+      "Configuration Logs",
+      "Remote Sets",
+      "Local Sets",
+      "Code Packs"
+    ],
+    "answer": [
+      "Update Sets"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Your company is giving all first line workers a special T-shirt as a recognition for their hard work. Management team wants a way for employees to order the T-shirt, with the ability to specify the preferred size and color. How would you ensure that only first line workers (non-managers) can submit the order?",
+    "options": [
+      "Create Record Producer and use the Available For list to specify First Line [sn_first_line] role",
+      "Create Catalog Item and use the Not Available list to specify the Manager Group",
+      "Create Catalog Item and use the Available For list to specify ITIL [itil] role",
+      "Create Order Guide and use the User Criteria list to specify First Line [sn_first_line] role"
+    ],
+    "answer": [
+      "Create Catalog Item and use the Not Available list to specify the Manager Group"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What field contains a record's 32-character, unique identifier?",
+    "options": [
+      "sn_rec_id",
+      "rec_id",
+      "u_id",
+      "sys_id",
+      "sn_gu_id",
+      "sn_sys_id",
+      "id"
+    ],
+    "answer": [
+      "sys_id"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What do you activate when you want to add applications or functionality within your development instance?",
+    "options": [
+      "App Package",
+      "Updated Package",
+      "Patch",
+      "Plugin",
+      "App Updated Set"
+    ],
+    "answer": [
+      "Plugin"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which ServiceNow resource is a framework that ensures the data your ServiceNow application requires maps correctly to the appropriate CMDB tables?",
+    "options": [
+      "Common Service Data Model (CSDM)",
+      "Service Mapping Utility (SMU)",
+      "Service Schema Map (SSM)",
+      "CMDB Class Manager (CMDBCM)",
+      "CI Class Manager (CICM)"
+    ],
+    "answer": [
+      "Common Service Data Model (CSDM)"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "You are showing your customer a new form that you have created for their new application. They would like to add a field to the form. Where could you do that? (Choose two.)",
+    "options": [
+      "Select Fields and Columns module",
+      "Right click on form header, select Configure > Form Layout",
+      "Click on context menu, select Configure > Form Designer",
+      "Select Field Class Manager module"
+    ],
+    "answer": [
+      "Right click on form header, select Configure > Form Layout",
+      "Click on context menu, select Configure > Form Designer"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which of the following are not included in an Update Set, by default? (Choose four.)",
+    "options": [
+      "Homepages",
+      "Data",
+      "Published Workflows",
+      "Business Rules",
+      "Schedules",
+      "Database Changes",
+      "Related Lists",
+      "Report Definitions",
+      "Scheduled Jobs",
+      "Client Scripts",
+      "Views"
+    ],
+    "answer": [
+      "Homepages",
+      "Data",
+      "Schedules",
+      "Scheduled Jobs"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "The ServiceNow platform includes which types of interfaces? (Choose three.)",
+    "options": [
+      "Now Mobile Apps",
+      "Agent Control Center",
+      "Back Office Dashboard",
+      "Service Portals",
+      "Now Platform User Interfaces",
+      "Field Service Taskboard"
+    ],
+    "answer": [
+      "Now Mobile Apps",
+      "Service Portals",
+      "Now Platform User Interfaces"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What do you need to do before you can use an Application-based trigger in your flow?",
+    "options": [
+      "Activate application trigger spoke",
+      "Activate trigger security rules",
+      "Activate application spoke, and plug-ins as needed",
+      "Assign Application trigger role [sn_app_trigger_write] to SME",
+      "Activate application plugins only"
+    ],
+    "answer": [
+      "Activate application spoke, and plug-ins as needed"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "An IT manager is responsible for the Network and Hardware assignment groups, each group contains 5 team members. These team members are working on many tasks, but the manager cannot see any tasks on the Service Desk > My Groups Work list. What could explain this?",
+    "options": [
+      "The Service Desk > My Groups Work list shows active work tasks that are not yet assigned.",
+      "The manager does not have the itil role.",
+      "The manager is not a member of the Service Desk group.",
+      "The manager is not a member of the Network and Hardware groups.",
+      "The Assignment Group manager field is empty."
+    ],
+    "answer": [
+      "The manager is not a member of the Network and Hardware groups."
     ],
     "type": "multiple-choice"
   },
@@ -671,7 +2120,9 @@
       "Connect> tools> workspace",
       "Connect> agent workspace"
     ],
-    "answer": "Connect> workspace",
+    "answer": [
+      "Connect> connect chat"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -699,16 +2150,22 @@
       "to publish a homepage to the portal",
       "to retire homepage"
     ],
-    "answer": "to delete homepage",
+    "answer": [
+      "to add a homepage to an update set"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "On a business rule, when setting determines at what points the rule executes. what are the options for specifying that timing?",
     "options": [
       "Prior to, synchronous, on update",
-      "Insert"
+      "Insert, update, delete, query",
+      "Before, synchronous, schedule job, views",
+      "Before, after, Async, display"
     ],
-    "answer": "Prior to, synchronous, on update",
+    "answer": [
+      "Before, after, Async, display"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -721,7 +2178,9 @@
       "PHP",
       "Glide"
     ],
-    "answer": "JavaScript",
+    "answer": [
+      "JavaScript"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -733,7 +2192,9 @@
       "scheduled job",
       "record rule"
     ],
-    "answer": "business rule",
+    "answer": [
+      "business rule"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -745,7 +2206,9 @@
       "business information management",
       "information portal management"
     ],
-    "answer": "knowledge management",
+    "answer": [
+      "knowledge management"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -759,7 +2222,9 @@
       "integration spoke hub",
       "spoke store"
     ],
-    "answer": "ServiceNow store",
+    "answer": [
+      "ServiceNow store"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -770,7 +2235,9 @@
       "Knowledge_admin",
       "Knowledge_base_admin"
     ],
-    "answer": "Sn_kb_admin",
+    "answer": [
+      "Knowledge_admin"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -781,7 +2248,9 @@
       "add variables",
       "add fields"
     ],
-    "answer": "add variables",
+    "answer": [
+      "add variables"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -793,7 +2262,9 @@
       "create a record producer that contains the four fields; then add to the record producer related list on the catalog items",
       "create a floor designer action, with variable set data pill; then apply flow to all of the eighty catalog items"
     ],
-    "answer": "create one variable set for the four variables; then add the variable set to each of the eighty catalog items",
+    "answer": [
+      "create one variable set for the four variables; then add the variable set to each of the eighty catalog items"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -805,7 +2276,9 @@
       "create a new import set table for each new data load",
       "monitor data quality and clean imported data using the data scrub workspace"
     ],
-    "answer": "plan time before your import to remove obsolete or inaccurate data.",
+    "answer": [
+      "plan time before your import to remove obsolete or inaccurate data."
+    ],
     "type": "multiple-choice"
   },
   {
@@ -818,7 +2291,9 @@
       "common service data model (CSDM)",
       "IT service management (ITSM)"
     ],
-    "answer": "service mapping guided setup",
+    "answer": [
+      "common service data model (CSDM)"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -829,7 +2304,9 @@
       "select source file; run auto map; transform data; clean up target table",
       "set up LDAP; run auto map; transform data; clean up target table"
     ],
-    "answer": "Load the data; create transform map; transform data; clean up import table",
+    "answer": [
+      "Load the data; create transform map; transform data; clean up import table"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -841,7 +2318,9 @@
       "approval delegates",
       "parent child approvers"
     ],
-    "answer": "approval chains",
+    "answer": [
+      "Flows"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -852,7 +2331,9 @@
       "all rows are treated as new records. no existing records were updated",
       "all rows or rejected from the import, as coalesce field is required"
     ],
-    "answer": "all rows are treated as new records. no existing records were updated",
+    "answer": [
+      "all rows are treated as new records. no existing records were updated"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -865,7 +2346,9 @@
       "transform designer",
       "transform dashboard"
     ],
-    "answer": "import designer",
+    "answer": [
+      "Mapping assist utility"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -877,7 +2360,9 @@
       "load data",
       "create transform app"
     ],
-    "answer": "field mapping",
+    "answer": [
+      "field mapping"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -890,7 +2375,9 @@
       "history module",
       "start icon"
     ],
-    "answer": "history module",
+    "answer": [
+      "clock icon"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -902,7 +2389,9 @@
       "submit HI ticket to get Authorization",
       "plugins are prohibited in personal developer instances"
     ],
-    "answer": "install dependent plugins first",
+    "answer": [
+      "plugins once installed cannot be uninstalled"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -914,7 +2403,9 @@
       "explanation table",
       "Xray search table"
     ],
-    "answer": "scooped application table",
+    "answer": [
+      "scooped application table"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -926,202 +2417,250 @@
       "PA",
       "Sn_itil"
     ],
-    "answer": "ITIL",
+    "answer": [
+      "KPI"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "while on an incident record, how would you add a tag for ” special   Handling”   To the record?",
     "options": [
-      "click on the context menu"
+      "click on the context menu",
+      "on the special handling field, check the box",
+      "on the tag field, select special handling from the choice list",
+      "click on the ….icon, click add tag, type special handling, press enter"
     ],
-    "answer": "click on the context menu",
+    "answer": [
+      "click on the ….icon, click add tag, type special handling, press enter"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "When using context menu on list, form, and column headings, what are the quick way to access the menus? Choose two answers",
     "options": [
-      "a) Right click on the list, form, or column heading",
-      "b) Click on context menu icon",
-      "c) Shift click on the list, form, or column heading",
-      "d) Double click on the list, form, or column heading",
-      "e) Ctrl M"
+      "Right click on the list, form, or column heading",
+      "Click on context menu icon",
+      "Shift click on the list, form, or column heading",
+      "Double click on the list, form, or column heading",
+      "Ctrl M"
     ],
-    "answer": "a) Right click on the list, form, or column heading, b) Click on context menu icon",
+    "answer": [
+      "Right click on the list, form, or column heading",
+      "Click on context menu icon"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "Which icon in the banner do you use to turn on the application picker and the update set picker?",
     "options": [
-      "a) Magnifier",
-      "b) Check box",
-      "c) Question mark",
-      "d) Gear",
-      "e) Chat bubbles"
+      "Magnifier",
+      "Check box",
+      "Question mark",
+      "Gear",
+      "Chat bubbles"
     ],
-    "answer": "d) Gear",
+    "answer": [
+      "Gear"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "A new service desk employee in Latin America Complaints that the create dates and time are incorrect on their incident list. What would you suggest to fix this issue?",
     "options": [
-      "a) Use the system properties to correct the instance time zone",
-      "b) Have them correct the time zone on their computer",
-      "c) Recommend they use Chrome instead of explorer",
-      "d) Have them use the gear icon to set the employee's time zone",
-      "e) Have them clear their cache"
+      "Use the system properties to correct the instance time zone",
+      "Have them correct the time zone on their computer",
+      "Recommend they use Chrome instead of explorer",
+      "Have them use the gear icon to set the employee's time zone",
+      "Have them clear their cache"
     ],
-    "answer": "a) Use the system properties to correct the instance time zone",
+    "answer": [
+      "Have them use the gear icon to set the employee's time zone"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "A department uses SLA data extensively to run reports. They keep asking for help with building reports off of the same set of tables. They seem to be conducted by dot walking. What could you do to make it easier for them to build their reports?",
     "options": [
-      "a) System table flow house their reporting data",
-      "b) Write knowledge articles explaining how to do dot walking",
-      "c) Create a data source for them and show them how to use it",
-      "d) Send a team member to a reporting class knock out any untrained users",
-      "e) Show them how to export to excel format"
+      "System table flow house their reporting data",
+      "Write knowledge articles explaining how to do dot walking",
+      "Create a data source for them and show them how to use it",
+      "Send a team member to a reporting class knock out any untrained users",
+      "Show them how to export to excel format"
     ],
-    "answer": "c) Create a data source for them and show them how to use it",
+    "answer": [
+      "Write knowledge articles explaining how to do dot walking"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "What are examples of core tables in the ServiceNow platform?",
     "options": [
-      "a) Team, party, awards",
-      "b) User, task, incident",
-      "c) Work, caller, timecard",
-      "d) Base configuration item, configuration item, base task"
+      "Team, party, awards",
+      "User, task, incident",
+      "Work, caller, timecard",
+      "Base configuration item, configuration item, base task"
     ],
-    "answer": "b) User, task, incident",
+    "answer": [
+      "User, task, incident"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "What are the benefits of assigning work tasks to a group, rather than to an individual? Choose five answers",
     "options": [
-      "a) Group members can avoid task which are nearing SLA breach",
-      "b) Group members can pick task based on the SLA urgency",
-      "c) Site support members can pick task based on location",
-      "d) Groups can assign task to users based on on-call schedules",
-      "e) Group can assign task to users based on skills",
-      "f) Groups can assign task to user based on availability",
-      "g) Group members can pick task, based on highest priority",
-      "h) Group members can choose their preferred task from my groups works"
+      "Group members can avoid task which are nearing SLA breach",
+      "Group members can pick task based on the SLA urgency",
+      "Site support members can pick task based on location",
+      "Groups can assign task to users based on on-call schedules",
+      "Group can assign task to users based on skills",
+      "Groups can assign task to user based on availability",
+      "Group members can pick task, based on highest priority",
+      "Group members can choose their preferred task from my groups works"
     ],
-    "answer": "b) Group members can pick task based on the SLA urgency, d) Groups can assign task to users based on on-call schedules, e) Group can assign task to users based on skills, f) Groups can assign task to user based on availability, g) Group members can pick task, based on highest priority",
+    "answer": [
+      "Groups can assign task to users based on on-call schedules",
+      "Group can assign task to users based on skills",
+      "Groups can assign task to user based on availability",
+      "Group members can pick task, based on highest priority",
+      "Group members can choose their preferred task from my groups works"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "What sections on the CI form, can you find information about the other CIs associated with your CI?",
     "options": [
-      "a) Related list",
-      "b) Related items",
-      "c) Affected CI tab",
-      "d) Related links",
-      "e) Child CI tab"
+      "Related list",
+      "Related items",
+      "Affected CI tab",
+      "Related links",
+      "Child CI tab"
     ],
-    "answer": "a) Related list",
+    "answer": [
+      "Related items"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "A manager wants to run a report showing how many service requests have been fulfilled for business cards since the beginning of the year. What table would they select for building this report?",
     "options": [
-      "a) Request[sc_req]",
-      "b) Requested item[sc_req_item]",
-      "c) Task[task]",
-      "d) Catalog item[sc_cat_item]",
-      "e) Catalog task[sc_task]",
-      "f) Service catalog[sc_catalog]"
+      "Request[sc_req]",
+      "Requested item[sc_req_item]",
+      "Task[task]",
+      "Catalog item[sc_cat_item]",
+      "Catalog task[sc_task]",
+      "Service catalog[sc_catalog]"
     ],
-    "answer": "a) Request[sc_req]",
+    "answer": [
+      "Requested item[sc_req_item]"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "Your customer requires that they be able to monitor which users are performing impersonation in their instance. What would you do to meet that requirement?",
     "options": [
-      "a) Add the role log write[sn_Log_write] to the impersonator group",
-      "b) Activate the glide.sys.log_impersonation script",
-      "c) Create user update set for impersonation tracking",
-      "d) On the impersonator role record, right click and select create log",
-      "e) From the user icon, select elevate roles"
+      "Add the role log write[sn_Log_write] to the impersonator group",
+      "Activate the glide.sys.log_impersonation script",
+      "Create user update set for impersonation tracking",
+      "On the impersonator role record, right click and select create log",
+      "From the user icon, select elevate roles"
     ],
-    "answer": "b) Activate the glide.sys.log_impersonation script",
+    "answer": [
+      "Activate the glide.sys.log_impersonation script"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "Sections on a form can appear as: one or two columns, tabs. From form designer, how do you define a section, so it displays as a tab?",
     "options": [
-      "a) Name the section",
-      "b) Add_tab to the end of the section name",
-      "c) Add. tab to the end of the section name",
-      "d) Click context menu> configure tabs",
-      "e) Click the gear and check the tab option"
+      "Name the section",
+      "Add_tab to the end of the section name",
+      "Add. tab to the end of the section name",
+      "Click context menu> configure tabs",
+      "Click the gear and check the tab option"
     ],
-    "answer": "b) Add_tab to the end of the section name",
+    "answer": [
+      "Name the section"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "A manager is complaining that they can't get the data then they need on a report, because the data resides in two different tables. This data is used for many different reports in their department. You have checked to see if dot walking will meet the requirement and it is not possible. What else might you try to help this manager?",
     "options": [
-      "a) Create a database view",
-      "b) Create a report source",
-      "c) Create a custom table",
-      "d) Export the tables to spreadsheet",
-      "e) Create a report template"
+      "Create a database view",
+      "Create a report source",
+      "Create a custom table",
+      "Export the tables to spreadsheet",
+      "Create a report template"
     ],
-    "answer": "a) Create a database view",
+    "answer": [
+      "Create a database view"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "Tables can be characterised in multiple ways. Which of this combination is impossible? Choose 2 answers",
     "options": [
-      "a) Custom and core",
-      "b) Customer and child",
-      "c) Base and parent",
-      "d) Custom and parent",
-      "e) Core and base",
-      "f) Child and core",
-      "g) Custom and base",
-      "h) Parent and child"
+      "Custom and core",
+      "Customer and child",
+      "Base and parent",
+      "Custom and parent",
+      "Core and base",
+      "Child and core",
+      "Custom and base",
+      "Parent and child"
     ],
-    "answer": "b) Customer and child, f) Child and core",
+    "answer": [
+      "Customer and core",
+      "Parent and child"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "What are advantages of using flow designer? Choose three answers",
     "options": [
-      "a) Supports legacy workflows",
-      "b) Less manual scripting",
-      "c) Enables complicated scripting",
-      "d) Reduces technical debt",
-      "e) Supports advanced developers",
-      "f) Compliments the integration store",
-      "g) Smooth integration with 3rd party systems"
+      "Supports legacy workflows",
+      "Less manual scripting",
+      "Enables complicated scripting",
+      "Reduces technical debt",
+      "Supports advanced developers",
+      "Compliments the integration store",
+      "Smooth integration with 3rd party systems"
     ],
-    "answer": "b) Less manual scripting, d) Reduces technical debt, f) Compliments the integration store",
+    "answer": [
+      "Less manual scripting",
+      "Reduces technical debt",
+      "Smooth integration with 3rd party systems"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "What policies are applied to all data entered into the platform via form (UI), import sets or web services?",
     "options": [
-      "a) Data submission policies",
-      "b) Data quality policies",
-      "c) Data integrity policies",
-      "d) Data policies",
-      "e) Write policies"
+      "Data submission policies",
+      "Data quality policies",
+      "Data integrity policies",
+      "Data policies",
+      "Write policies"
     ],
-    "answer": "c) Data integrity policies",
+    "answer": [
+      "Data policies"
+    ],
     "type": "multiple-choice"
   },
   {
     "question": "You have been asked to configure form so an Employee could order a tablet and select the standard accessory options to purchase with it. These Standard options are carrying case, screen cleaner, tablet stand, and screen protector. What approach would you take? Choose three answers",
     "options": [
-      "a) On shopping cart configuration, select options to show the add accessories button",
-      "b) Create one catalog item for each: tablet, carrying case, screen cleaner, tablet stand, and screen protector",
-      "c) Create catalog item for the tablet and add a variable set to the form for the accessory options",
-      "d) Create a record producer and on the form, add a checkbox variable"
+      "On shopping cart configuration, select options to show the add accessories button",
+      "Create one catalog item for each: tablet, carrying case, screen cleaner, tablet stand, and screen protector",
+      "Create catalog item for the tablet and add a variable set to the form for the accessory options",
+      "Create a record producer and on the form, add a checkbox variable for each accessory options.",
+      "create catalog item for the tablet, and on the form, add a checkbox variable for each accessory option"
     ],
-    "answer": "a) On shopping cart configuration, select options to show the add accessories button, c) Create catalog item for the tablet and add a variable set to the form for the accessory options, d) Create a record producer and on the form, add a checkbox variable",
+    "answer": [
+      "Create one catalog item for each: tablet, carrying case, screen cleaner, tablet stand, and screen protector",
+      "Create a record producer and on the form, add a checkbox variable for each accessory options.",
+      "create catalog item for the tablet, and on the form, add a checkbox variable for each accessory option"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1134,7 +2673,9 @@
       "manually add them to the update set",
       "they cannot be moved via updates set"
     ],
-    "answer": "e) manually add them to the update set",
+    "answer": [
+      "manually add them to the update set"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1145,7 +2686,9 @@
       "request can contain many items and items can be any item from the catalogs",
       "a configuration item can belong to multiple classes and classes can contain multiple configuration items"
     ],
-    "answer": "b) vendors can sell multiple products and products can be sold by multiple vendors",
+    "answer": [
+      "request can contain many items and items can be any item from the catalogs"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1156,7 +2699,9 @@
       "create a company CSS package for emails",
       "create a company email header and footer"
     ],
-    "answer": "b) create a company email template",
+    "answer": [
+      "create a company email header and footer"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1170,7 +2715,9 @@
       "form designer",
       "workflow designer"
     ],
-    "answer": "c) catalog builder",
+    "answer": [
+      "catalog builder"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1181,7 +2728,9 @@
       "context menu",
       "more options (….)"
     ],
-    "answer": "d) more options (….)",
+    "answer": [
+      "more options (….)"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1192,11 +2741,13 @@
       "accessible to",
       "can access"
     ],
-    "answer": "b) access list",
+    "answer": [
+      "can read"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "When adding a related list to a form, you choose the related list from the list collector. What is an example of a related list you might see on the list collector?",
+    "question": "When adding a related list to a form, you choose the related list from the list collector. What is an example of a related list you might see on the list collector? Choose 3 answers.",
     "options": [
       "Outages > Task number",
       "catalog task> parent",
@@ -1204,7 +2755,11 @@
       "Problem== parent",
       "release phase== parent"
     ],
-    "answer": "a) Outages > Task number",
+    "answer": [
+      "Outages > Task number",
+      "catalog task> parent",
+      "HR case> parent"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1216,7 +2771,9 @@
       "field icon",
       "field value"
     ],
-    "answer": "a) Data pill",
+    "answer": [
+      "Data pill"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1228,7 +2785,9 @@
       "process automation> workflow editor",
       "process automation> flow designer"
     ],
-    "answer": "e) process automation> flow designer",
+    "answer": [
+      "process automation> flow designer"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1241,7 +2800,12 @@
       "LDAP connection",
       "local sources (i.e., XML, CSV, excel)"
     ],
-    "answer": "b) JDBC connection, c) DataHub, e) LDAP connection, f) local sources (i.e., XML, CSV, excel)",
+    "answer": [
+      "JDBC connection",
+      "DataHub",
+      "LDAP connection",
+      "local sources (i.e., XML, CSV, excel)"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1253,7 +2817,11 @@
       "form buttons",
       "form muse"
     ],
-    "answer": "a) form context menu, c) form links, d) form buttons",
+    "answer": [
+      "form context menu",
+      "form links",
+      "form buttons"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1264,7 +2832,9 @@
       "Application",
       "Star"
     ],
-    "answer": "c) Application",
+    "answer": [
+      "Funnel"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1275,7 +2845,9 @@
       "application navigator",
       "banner"
     ],
-    "answer": "c) application navigator",
+    "answer": [
+      "banner"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1287,7 +2859,11 @@
       "page header",
       "field navigator"
     ],
-    "answer": "a) field picker, b) field layout, c) form layout",
+    "answer": [
+      "form layout",
+      "page header",
+      "field navigator"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1300,7 +2876,12 @@
       "Add comments",
       "rate with stars"
     ],
-    "answer": "a) flag article, b) tag as helpful, c) submit KB Errata, e) Add comments",
+    "answer": [
+      "flag article",
+      "tag as helpful",
+      "Add comment",
+      "rate with stars"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1313,7 +2894,12 @@
       "Delete",
       "Write"
     ],
-    "answer": "a) Update, c) Create, d) Read, e) Delete",
+    "answer": [
+      "Write",
+      "Create",
+      "Read",
+      "Delete"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1324,7 +2910,9 @@
       "Client",
       "Browser"
     ],
-    "answer": "c) Client",
+    "answer": [
+      "Client"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1335,7 +2923,9 @@
       "transform map",
       "field transformer"
     ],
-    "answer": "c) transform map",
+    "answer": [
+      "transform map"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1346,7 +2936,9 @@
       "system definition> dictionary. select table. go to related links and click show schema map",
       "system definition> show schema map. select table"
     ],
-    "answer": "a) system definitions> tables. select table. Go to related links and click show schema map",
+    "answer": [
+      "system definitions> tables. select table. Go to related links and click show schema map"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1357,7 +2949,9 @@
       "categories",
       "groups"
     ],
-    "answer": "d) groups",
+    "answer": [
+      "user criteria"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1369,7 +2963,9 @@
       "Speak to the condition builder",
       "automatically select a filter based on keywords"
     ],
-    "answer": "b) filter list by typing in a phrase",
+    "answer": [
+      "Speak to the condition builder"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1379,7 +2975,9 @@
       "add user criteria for HR manager group on the categories can read list",
       "on the knowledge article, add an access control for HR manager group on the can read list, then publish a"
     ],
-    "answer": "a) Add user criteria for HR manager group on the can read list of the article",
+    "answer": [
+      "add user criteria for HR manager group on the categories can read list"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1390,7 +2988,10 @@
       "Teams",
       "Users"
     ],
-    "answer": "Groups, Users",
+    "answer": [
+      "Groups",
+      "Users"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1401,7 +3002,9 @@
       "Analytics reports",
       "Performance analytics"
     ],
-    "answer": "Performance analytics",
+    "answer": [
+      "Performance analytics"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1414,7 +3017,11 @@
       "Make sure the requesters user record as manager specified",
       "Create and select your testing update set before starting the test cases"
     ],
-    "answer": "Make sure the latest flows are activated, Use the instance Incognito settings to quickly toggle between requester and approval, Impersonate the requester to ensure the form works",
+    "answer": [
+      "Use your admin account, so you can approve the items quickly",
+      "Impersonate the requester to ensure the form works",
+      "Make sure the requesters user record as manager specified"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1426,7 +3033,9 @@
       "Specify the source table on the data pill related list",
       "Drag the table icon onto the flow definition"
     ],
-    "answer": "Drag the data pill onto the flow definition",
+    "answer": [
+      "Drag the data pill onto the flow definition"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1438,7 +3047,9 @@
       "Select normal role",
       "Logout and back in"
     ],
-    "answer": "End impersonation",
+    "answer": [
+      "End impersonation"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1450,7 +3061,9 @@
       "Bottom to top: table ACL, table. field ACL, parent table. field ACL",
       "Specific to general: table ACL, parent table ACL, wildcard(*) ACL"
     ],
-    "answer": "Specific to general: table ACL, parent table ACL, wildcard(*) ACL",
+    "answer": [
+      "Specific to general: table ACL, parent table ACL, wildcard(*) ACL"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1462,7 +3075,11 @@
       "Tables within the global scope",
       "Tables which allow write access to other applications"
     ],
-    "answer": "Related tables, using dot walk, Tables within the existing application scope, Tables within the global scope",
+    "answer": [
+      "Tables which allow write access to other applications",
+      "Tables within the existing application scope",
+      "Tables within the global scope"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1474,7 +3091,9 @@
       "Define the first condition; click> icon on breadcrumb, define second condition; click run",
       "Define the first condition; click AND button; define second condition; press enter"
     ],
-    "answer": "Define the first condition; click AND button; define second condition; click run",
+    "answer": [
+      "Define the first condition; click AND button; define second condition; click run"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1485,7 +3104,9 @@
       "Automatic mapping",
       "Mapping dashboard"
     ],
-    "answer": "Automatic mapping",
+    "answer": [
+      "Automatic mapping"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1496,7 +3117,9 @@
       "Layout",
       "Style"
     ],
-    "answer": "Format",
+    "answer": [
+      "Style"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1507,7 +3130,9 @@
       "A client script executes before a record is loaded and a business rule executes after a record is updated",
       "A client script executes on the client and a business rule executes on the server"
     ],
-    "answer": "A client script executes on the client and a business rule executes on the server",
+    "answer": [
+      "A client script executes on the client and a business rule executes on the server"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1519,7 +3144,11 @@
       "Smooth integration with 3rd party system",
       "Supports advanced developers"
     ],
-    "answer": "Reduces technical debt, Less manual scripting, Smooth integration with 3rd party system",
+    "answer": [
+      "Reduces technical debt",
+      "Less manual scripting",
+      "Smooth integration with 3rd party system"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1530,7 +3159,9 @@
       "Import set",
       "Transform set"
     ],
-    "answer": "Import set",
+    "answer": [
+      "Import set"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1541,7 +3172,9 @@
       "Base class tables always have tables extended from them. Parent tables do not have tables extended from them",
       "Extended tables are always extended from parent tables. Extended tables are usually extended from base tables"
     ],
-    "answer": "Base class table is not extended from another table. Parent class tables may be extended from another table",
+    "answer": [
+      "Base class table is not extended from another table. Parent class tables may be extended from another table"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1553,7 +3186,11 @@
       "Self-service> my access",
       "System security> access control (ACL)"
     ],
-    "answer": "System security> security, System security> high security settings, System security> access control (ACL)",
+    "answer": [
+      "System security> security",
+      "System security> high security settings",
+      "System security> access control (ACL)"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1564,7 +3201,9 @@
       "Match criteria",
       "Operation"
     ],
-    "answer": "Operator",
+    "answer": [
+      "Operator"
+    ],
     "type": "multiple-choice"
   },
   {
@@ -1577,314 +3216,1172 @@
       "Ask for approval",
       "Wait for match"
     ],
-    "answer": "Look for update, Wait for condition, Create record, Look up record",
+    "answer": [
+      "Ask for approval",
+      "Wait for condition",
+      "Create record",
+      "Look up record"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "In this situation, which tables are parent, child and base tables?",
+    "question": "ServiceNow contains a resource which provides a standard and shared set of service related definitions across ServiceNow products and platform that will enable and support true service level reporting, and a CMDB framework across products and platform that will enable and support multiple configuration strategies. What resource do these statements describe?",
     "options": [
-      "a) super incident table is a parent table",
-      "b) super incident table is a child table",
-      "c) task table is a child table",
-      "d) super incident table is a base table",
-      "e) task table is a parent table",
-      "f) incident table is a base table",
-      "g) task table is a base table",
-      "h) incident table is a parent table",
-      "i) incident table is a child table"
+      "Common Services Data Model (CSDM)",
+      "Information Technology Service Management (ITSM)",
+      "Configuration Management Database (CMDB)",
+      "Information Technology Infrastructure Library (ITIL)"
     ],
-    "answer": "b, e, g",
+    "answer": [
+      "Common Services Data Model (CSDM)"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which is the most efficient way to move large amount of data between instances?",
+    "question": "Which of the following protects applications by identifying and restricting access to available files and data?",
     "options": [
-      "a) Update sets",
-      "b) export to data package",
-      "c) export to zip",
-      "d) export to XML"
+      "Application Configuration",
+      "Verbose Log",
+      "Access Control Rules",
+      "Application Scope"
     ],
-    "answer": "b",
+    "answer": [
+      "Application Scope"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which service now utility gives a service desk agent the ability to trace from a service Having an issue, to see which Cis supporting that service have active issues?",
+    "question": "IntegrationHub enables execution of third-party APIs as a part of a flow. These integrations are referred to as?",
     "options": [
-      "a) CI health dashboard",
-      "b) event management homepage",
-      "c) service dashboard",
-      "d) CI dependency view"
+      "an action",
+      "a spoke",
+      "a connection",
+      "an integration step"
     ],
-    "answer": "d",
+    "answer": [
+      "a spoke"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "When importing spreadsheet data into service now, what is the first step in the process?",
+    "question": "What are the steps to retrieve an Update Set?",
     "options": [
-      "a) select coalesce",
-      "b) select import set",
-      "c) define data source",
-      "d) run data scrabber",
-      "e) load data"
+      "Verify Update Set is Complete, Retrieve, Preview, Apply",
+      "Verify Update Set is Complete, Test Connection, Apply",
+      "Verify Update Set is Complete, Test Connection, Commit",
+      "Verify Update Set is Complete, Retrieve, Preview, Commit"
     ],
-    "answer": "b",
+    "answer": [
+      "Verify Update Set is Complete, Retrieve, Preview, Commit"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "When managing tags, you can adjust who is able to see it. what are the visibility options?",
+    "question": "What is the difference between a UI Policy and Data Policy?",
     "options": [
-      "a) Everyone",
-      "b) groups and users",
-      "c) me",
-      "d) Admins",
-      "e) Roles and permissions"
+      "Data Policies run when data is entered through the form, by an Import Set, or by web services, while UI Policies are set only by web services",
+      "Data Policies can be converted into UI Policies, but UI Policies cannot be converted into Data Policies",
+      "Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form interactions",
+      "Data Policies run only after UI Policies run successfully"
     ],
-    "answer": "a, b, c",
+    "answer": [
+      "Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form interactions"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which modules can you use to create a new table?",
+    "question": "Which tool is used for creating dependencies between configuration items in the CMDB?",
     "options": [
-      "a) tables and columns",
-      "b) dictionary",
-      "c) schema map",
-      "d) tables"
+      "CI Relationship Editor",
+      "CMDB Builder",
+      "CI Service Manager",
+      "CI Class Manager"
     ],
-    "answer": "a, b",
+    "answer": [
+      "CI Class Manager"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "What service now feature allows you to include data from a secondary related table on a report?",
+    "question": "Which of the following steps can be used to import new data into ServiceNow from a spreadsheet?",
     "options": [
-      "a) outer join",
-      "b) joins",
-      "c) SQL",
-      "d) dot walking"
+      "Select Data Source, Schedule Transform",
+      "Load Data, Create Transform Map, Run Transform",
+      "Define Data Source, Select Transform Map, Run Transform",
+      "Select Import Set, Select Transform Map, Run Transform"
     ],
-    "answer": "d",
+    "answer": [
+      "Load Data, Create Transform Map, Run Transform"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which of the following are not included in an update set by default?",
+    "question": "What is the primary application used to load data into ServiceNow?",
     "options": [
-      "a) Business rules",
-      "b) Schedules",
-      "c) scheduled jobs",
-      "d) transcripts",
-      "e) home pages",
-      "f) data"
+      "Service Level Management",
+      "Configuration",
+      "System Import Sets",
+      "System Update Sets"
     ],
-    "answer": "f",
+    "answer": [
+      "System Import Sets"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "What options can you see, when you right click on a CI, from the CI dependency view map?",
+    "question": "Access Control rules may provide access security for which of the following database objects?",
     "options": [
-      "a) view affected Cis",
-      "b) view cases",
-      "c) view related tasks",
-      "d) view recent outages",
-      "e) view knowledge"
+      "For a specific role, group, or user",
+      "For a specific row, column, or table",
+      "For specific groups",
+      "For a specific CMDB Configuration item"
     ],
-    "answer": "a, b, c",
+    "answer": [
+      "For a specific row, column, or table"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "You have heard about a new application released by service now. you want to try it out, to see if it might be useful for your company’s service now implementation. what would be the best way to get hands on experience with the new application?",
+    "question": "When creating a global custom table named 'abc', what is the table name that is automatically assigned by the platform?",
     "options": [
-      "a) active the application plug in, on your personal dev instance",
-      "b) check the latest release notes on docs.servicenow.com",
-      "c) search the wiki for sales demo request form",
-      "d) Activate the application plug in, on your company’s production instance"
+      "snc_abc",
+      "abc",
+      "u_abc",
+      "sys_abc"
     ],
-    "answer": "a",
+    "answer": [
+      "u_abc"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "On a filter condition, there is an element, which is based on the table, the user access rights, and column on the table. what is this element called?",
+    "question": "What is a sys_id?",
     "options": [
-      "a) Column",
-      "b) Field",
-      "c) data element",
-      "d) attribute",
-      "e) label"
+      "Unique 32-character identifier that is assigned to every record",
+      "A client-side Business Rule",
+      "A server-side Business Rule",
+      "Unique 64-character identifier that is assigned to every record"
     ],
-    "answer": "c",
+    "answer": [
+      "Unique 32-character identifier that is assigned to every record"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which module would you use to customize your instance banner image, text and colours?",
+    "question": "Which of the following statements describes how data is organized in a table?",
     "options": [
-      "a) service portal> portals> branding",
-      "b) system properties> basic configuration UI16",
-      "c) system UI> UI pages> branding",
-      "d) home page admin> pages> branding",
-      "e) system properties> branding"
+      "A column is a field in the database and a record is one user",
+      "A column is one field and a record is one row",
+      "A column is one field and a record is one column",
+      "A column contains data from one user and a record is one set of fields"
     ],
-    "answer": "a",
+    "answer": [
+      "A column is one field and a record is one row"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which service now capability provides assistance to help users obtain information, make decisions and perform common work task via messaging interface?",
+    "question": "Which core table in the ServiceNow platform provides a series of standard fields used on each of the tables that extend it, such as the Incident [incident] and Problem [problem] tables?",
     "options": [
-      "a) Knowledge chat",
-      "b) virtual agent",
-      "c) now support",
-      "d) chat box",
-      "e) agent workspace"
+      "Task [task]",
+      "Assignment [assignment]",
+      "Service [service]",
+      "Workflow [workflow]"
     ],
-    "answer": "b",
+    "answer": [
+      "Task [task]"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Service now contains over 25 different report types. what are some of the types?",
+    "question": "What are two ways to generate an Event? (Choose two.)",
     "options": [
-      "a) Semi-donut",
-      "b) Speedometer",
-      "c) Donut",
-      "d) Thermometer",
-      "e) Pie",
-      "f) Horizontal Bar",
-      "g) Odometer"
+      "Business Rule",
+      "Workflow",
+      "Log entry",
+      "Knowledge article publication"
     ],
-    "answer": "a, b, c, e, f",
+    "answer": [
+      "Business Rule",
+      "Workflow"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "On the CI dependency view, what enables you to trace from an infrastructure item, like a server, to the server that dependent on that server?",
+    "question": "What is a Notification?",
     "options": [
-      "a) Transform app",
-      "b) Relationships",
-      "c) automapping utility",
-      "d) service tracer"
+      "A new Knowledge article created by a Business Rule",
+      "A tool for alerting users that events that concern them have occurred",
+      "A message through Connect related to a Change Request",
+      "An email file attachment"
     ],
-    "answer": "b",
+    "answer": [
+      "A tool for alerting users that events that concern them have occurred"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which one statement correctly describes access control rule evaluation?",
+    "question": "How is a group defined in ServiceNow?",
     "options": [
-      "a) roles are evaluated from the general to specific, so a table rule must be active to continue",
-      "b) if a row level rule and a field level rule exist, both rules must be true before an operation is allowed",
-      "c) rules are evaluated using roles. the role with the most permissions evaluates the rules first",
-      "d) if more than one rules applies to a row, the older rule is evaluated first"
+      "A group is one record stored in the Group Type [sys_user_group_type] table",
+      "A group is one record stored in the Group [sys_user_group] table",
+      "A group defines a set of users that share the same location",
+      "A group defines a set of users that share the same job title"
     ],
-    "answer": "b",
+    "answer": [
+      "A group is one record stored in the Group [sys_user_group] table"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which one of the following describe the primary operations performed against tables in the service now platform?",
+    "question": "Which tool should be used to populate commonly used fields in a form?",
     "options": [
-      "a) create, read, upload, delete",
-      "b) capture, rate, write, develop",
-      "c) create, rate, update, delete",
-      "d) create, read, write, delete"
+      "Template",
+      "Reference Qualifier",
+      "Formatter",
+      "Assignment Rule"
     ],
-    "answer": "d",
+    "answer": [
+      "Template"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "What are advantages of using spokes for integration?",
+    "question": "Which of the following is used to categorize, flag, and locate records?",
     "options": [
-      "a) free spokes are available in the ServiceNow store",
-      "b) reduces the need for code",
-      "c) features scale and control mechanism",
-      "d) ensures discoverability and reuse",
-      "e) automated event management"
+      "Search",
+      "Favorites",
+      "Tags",
+      "Bookmarks"
     ],
-    "answer": "b, c, d",
+    "answer": [
+      "Tags"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "When looking at a long list of records, you want to quickly filter, to show only those which have short description containing email. how might you do that?",
+    "question": "What would NOT appear in the Application Navigator if 'service' is typed into the filter field?",
     "options": [
-      "a) on search box, select text, type email, click enter",
-      "b) click list magnifier to expand column search, on short description, type email, click enter",
-      "c) click list magnifier to expand column search, on short description, type %email, click enter",
-      "d) click list magnifier to expand column search, on short description, type *email, click enter"
+      "Configuration > Business Services",
+      "Self-Service > Knowledge",
+      "Service Portal > Widgets",
+      "Incident > Assigned to me"
     ],
-    "answer": "b",
+    "answer": [
+      "Incident > Assigned to me"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "A task worker asks how they can monitor any updates occurring to records assigned to him, like responses from customers. what do you suggest?",
+    "question": "Which section of the ServiceNow UI allows you to perform a global search?",
     "options": [
-      "a) on my work list, select activity stream icon to show a frame with live updates",
-      "b) select service desk> my work dashboard",
-      "c) open an agent workspace tab for each record he wants to monitor",
-      "d) click on the eyeglass icon to expand the monitor frame"
+      "Application Navigator",
+      "Banner frame",
+      "List pane",
+      "Content frame"
     ],
-    "answer": "a",
+    "answer": [
+      "Banner frame"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "Which workflow would you update to make the change to require approval for any request that totals over $1500?",
+    "question": "How are local flow variables accessed in the Flow Designer Data panel?",
     "options": [
-      "a) service approval processing",
-      "b) purchasing process flow",
-      "c) service catalog request",
-      "d) service catalog item request"
+      "As newly generated icons",
+      "As scratchpad variables",
+      "As new tabs",
+      "As data pills"
     ],
-    "answer": "a) service approval processing",
+    "answer": [
+      "As data pills"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "After you create a new table, what is the best practice regarding the navigation pane? Choose 2 answers",
+    "question": "Where in Flow Designer can users access information about actions that are added to the flow?",
     "options": [
-      "a) create application menu with the same name as the table label",
-      "b) set the font style on both the application menu and the module",
-      "c) specify which roles are able to see the module",
-      "d) set the filter condition on the application module",
-      "e) Create module with the plural of the table label",
-      "f) specify which roles are able to see the application menu"
+      "Virtual Agent Help",
+      "Local Action Help",
+      "Help Panel",
+      "Flow Assistant"
     ],
-    "answer": "a) create application menu with the same name as the table label, e) Create module with the plural of the table label",
+    "answer": [
+      "Help Panel"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "What Icon do you use to change the label on your favorite?",
+    "question": "Which plugin needs to be activated in order to translate the content of a catalog item to multiple languages?",
     "options": [
-      "a) Triangle",
-      "b) Star",
-      "c) Clock",
-      "d) Pencil"
+      "Localization Framework plugin (com.glide.localization_framework)",
+      "Translation Framework plugin (com.glide.translation_framework)",
+      "Multiple Language Framework plugin (com.glide.multiple.language_framework)",
+      "Language AI Framework plugin (com.glide.language.ai_framework)"
     ],
-    "answer": "d) Pencil",
+    "answer": [
+      "Localization Framework plugin (com.glide.localization_framework)"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "What is the platform name for the group table?",
+    "question": "Which certificate-based authentication methods can be enabled so that users can log into the Service Portal? (Select 2)",
     "options": [
-      "a) Group",
-      "b) Sys_user_group",
-      "c) Sys_group",
-      "d) Sys_groups"
+      "Extended Validation Access (EVA)",
+      "Organization Verification Card (OVC)",
+      "Common Access Card (CAC)",
+      "DDomain Authentication Card (DAC)",
+      "Personal Identify Verification (PIV)"
     ],
-    "answer": "c) Sys_group",
+    "answer": [
+      "Common Access Card (CAC)",
+      "Personal Identify Verification (PIV)"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "From a form, what would you Click to modify the order of the fields on the form? Choose 2 answers",
+    "question": "How can administrators utilize the same content for different notification channels?",
     "options": [
-      "a) context menu> configure> form layout",
-      "b) context menu> configure> form designer",
-      "c) right click on header> configure> form design",
-      "d) contexts menu> form> layout",
-      "e) right click on header> configure>UX dashboard"
+      "Configure Default notification content",
+      "Enable Actionable notification content",
+      "Provide Common notification content",
+      "Set up Related notification content"
     ],
-    "answer": "a) context menu> configure> form layout, b) context menu> configure> form designer",
+    "answer": [
+      "Provide Common notification content"
+    ],
     "type": "multiple-choice"
   },
   {
-    "question": "On access control definitions, what are ways you can set the permissions on a table? Choose 3 answers",
+    "question": "Which plugin allows users to install multiple applications, application-customizations, or plugins at once?",
     "options": [
-      "a) Groups",
-      "b) Roles",
-      "c) script that sets the answer variable to true or false",
-      "d) CRUD",
-      "e) conditional expressions"
+      "Application Integration and Plugin Delivery (A1PD) SpokeBatch Install",
+      "Continuous Integration and Continuous Delivery (CICD) SpokeBatch Install",
+      "Multiple Integration and Process Delivery (MIPD) SpokeBatch Install",
+      "Quick Integration and Multiple Delivery (QIMD) SpokeBatch Install"
     ],
-    "answer": "a) Groups, b) Roles, d) CRUD",
+    "answer": [
+      "Continuous Integration and Continuous Delivery (CICD) SpokeBatch Install"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "The ServiceNow Virtual Agent provides assistance within a messaging interface. Which capability allows end users to configure Virtual Agent to intercept and help resolve submitted incidents?",
+    "options": [
+      "Incident Auto-Resolution",
+      "Ticket Resolver",
+      "Virtual Agent Helper",
+      "Web Intelligence"
+    ],
+    "answer": [
+      "Incident Auto-Resolution"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which fields can be configured in reporting to perform arithmetic, coalesce, concatenation, and length?",
+    "options": [
+      "Sourcing fields",
+      "Function fields",
+      "Computational fields",
+      "Calculation fields"
+    ],
+    "answer": [
+      "Function fields"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When using the Performance Analytics application in the Now Platform, what kind of KPI signals are used to make decisions that statistically support long term workflow stability?",
+    "options": [
+      "Long-term signals",
+      "Non-signals",
+      "Anti-signals",
+      "Stability signals"
+    ],
+    "answer": [
+      "Anti-signals"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "New records, new groups, and modified configuration Items (CIs): what do they have in common?",
+    "options": [
+      "They are included in an Update Set",
+      "They are not captured in an Update Set",
+      "They are customizations",
+      "They do not have anything in common"
+    ],
+    "answer": [
+      "They are not captured in an Update Set"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When does the Submit button appear on a form?",
+    "options": [
+      "When saving an old record",
+      "When creating a new record",
+      "When changing the reference field in an existing record",
+      "When updating an existing record"
+    ],
+    "answer": [
+      "When creating a new record"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the three permission requirements that must evaluate to true for an access control rule to apply? Choose 3 answers",
+    "options": [
+      "Conditions",
+      "table.",
+      "Roles",
+      "Script",
+      "table.'",
+      "table.none"
+    ],
+    "answer": [
+      "Conditions",
+      "Roles",
+      "Script"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which one of the following is an accurate list of changes that are captured in an Update Set?",
+    "options": [
+      "Changes made to tables, forms, schedules, and client scripts",
+      "Changes made to tables, forms, views, and fields",
+      "Changes made to: tables, forms, Business Rules, and data records",
+      "Changes made to: tables, forms, groups, and configuration items (CIs)"
+    ],
+    "answer": [
+      "Changes made to tables, forms, views, and fields"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is an Event in ServiceNow?",
+    "options": [
+      "An Event is a trigger that has a direct response in the platform",
+      "An Event is an indication to the ServiceNow processes that something has occurred",
+      "An Event is an indicator that a Priority 1 (P1) Incident has been logged",
+      "An Event is a recognized, scheduled occurrence of a process"
+    ],
+    "answer": [
+      "An Event is an indication to the ServiceNow processes that something has occurred"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the difference between a UI Policy and Data Policy?",
+    "options": [
+      "Data Policies run only after UI Policies run successfully",
+      "Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form interactions",
+      "Data Policies can be converted into UI Policies, but UI Policies cannot be converted into Data Policies",
+      "Data Policies run when data is entered through the form, by an Import Set or by web services, while UI Policies are set only by web services"
+    ],
+    "answer": [
+      "Data Policies run regardless of how data is entered into ServiceNow, while UI Policies are used for form interactions"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the purpose of the Filter navigator in the Application Navigator?",
+    "options": [
+      "Filter applications in order of use",
+      "Quickly navigate to applications and modules",
+      "Collapse and expand applications",
+      "List applications in order of Top Requests"
+    ],
+    "answer": [
+      "Quickly navigate to applications and modules"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the purpose of the Event Registry?",
+    "options": [
+      "The Event Registry lists all Events that have successfully completed within a 24-hour period",
+      "The Event Registry is a list of all Events that originate through an integration",
+      "The Event Registry is a module that provides Event definitions",
+      "The Event Registry is a list of all Events that have successfully completed after being invoked by a script"
+    ],
+    "answer": [
+      "The Event Registry is a module that provides Event definitions"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "In addition to the admin role, which one of the following roles allows a user to add or remove fields from a list?",
+    "options": [
+      "personalize.control",
+      "personalize_list",
+      "ul_page_admin",
+      "ui_action_admin"
+    ],
+    "answer": [
+      "personalize_list"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is NOT an example of a UI Action?",
+    "options": [
+      "Search",
+      "Form buttons",
+      "List Buttons",
+      "Related Links"
+    ],
+    "answer": [
+      "Search"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "How do you make a list filter available to everyone?",
+    "options": [
+      "Make active, set visibility, and save",
+      "Assign a name, set visibility, and save",
+      "Assign a group, set visibility, and save",
+      "Make active, assign a name, and save"
+    ],
+    "answer": [
+      "Assign a name, set visibility, and save"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A change request has been approved and assigned to you as the system administrator to change the Incident number prefix from the default of 'INC' to the company standard 'IN.' What are the next steps to be taken?",
+    "options": [
+      "Go to the Number Maintenance application and change the prefix to 'IN' for incident",
+      "Create a Business Rule that modifies the prefix before the Insert operation",
+      "The prefix of an incident cannot be changed because it is a built-in feature",
+      "Submit a Change Request to ServiceNow Technical Support"
+    ],
+    "answer": [
+      "Go to the Number Maintenance application and change the prefix to 'IN' for incident"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the purpose of a Data Policy?",
+    "options": [
+      "Data Policies enforce security",
+      "Data Policies standardize data in Update Sets",
+      "Data Policies enforce data consistency",
+      "Data Policies apply to lists to standard data"
+    ],
+    "answer": [
+      "Data Policies enforce data consistency"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which one of the following is NOT a type of Visual Task Board?",
+    "options": [
+      "Feature",
+      "Guided boards",
+      "Flexible",
+      "Freeform"
+    ],
+    "answer": [
+      "Feature"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What ServiceNow tables can Administrators define as 'destinations' for imported data, when using Transform Maps in the System Import Sets application?",
+    "options": [
+      "The Task table is the only table that can be a destination for imported data in the Transform Map module",
+      "The Incident, Problem, Change, Task, and Service Catalog tables are the only tables that can be a destination for imported data in the Transform Map module",
+      "Only the Incident, Problem, and Change tables can be a destination for imported data in the Transform Map module",
+      "Any ServiceNow table can be a destination for imported data in the Transform Map module"
+    ],
+    "answer": [
+      "Any ServiceNow table can be a destination for imported data in the Transform Map module"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What kind of data can Import Sets use to populate tables in ServiceNow?",
+    "options": [
+      "CSS, SOAP, and Excel",
+      "XML, CSV, and Excel",
+      "SOAP, REST, and XML",
+      "XML, SOAP, and CSS"
+    ],
+    "answer": [
+      "XML, CSV, and Excel"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which one of the following statements is true?",
+    "options": [
+      "When an incident form is saved, all the Work Notes field text is recorded to the Activity Log field",
+      "When an incident form is saved, the Work Notes field text is overwritten each time work is logged against the incident",
+      "When an incident form is saved, the impact field is calculated by adding the Priority and Urgency values",
+      "When an Incident form is saved, the Additional Comments field text is cleared and recorded to the Work Notes section"
+    ],
+    "answer": [
+      "When an incident form is saved, all the Work Notes field text is recorded to the Activity Log field"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the three components of a filter condition?",
+    "options": [
+      "Field, Operator and Value",
+      "Condition, Operator, and Value",
+      "Field, Condition, and Value",
+      "Variable, Field, and Value"
+    ],
+    "answer": [
+      "Field, Operator and Value"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is a role in ServiceNow?",
+    "options": [
+      "A role is one record in the Role [sys_user_role] table",
+      "A role is one record in the Role [user_sys_role] table",
+      "A role is a persona used in Live Feed Chat",
+      "A role is a set of modules for a particular application"
+    ],
+    "answer": [
+      "A role is one record in the Role [sys_user_role] table"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which one of the following modules can be used to view field settings for a table?",
+    "options": [
+      "Tables & Columns",
+      "Access Control",
+      "Columns and Fields",
+      "Tables and Fields"
+    ],
+    "answer": [
+      "Tables & Columns"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which configuration allows you to use a script to coalesce data in Import Sets?",
+    "options": [
+      "Multiple-field coalesce",
+      "No coalesce",
+      "Conditional coalesce",
+      "Single-field coalesce"
+    ],
+    "answer": [
+      "Conditional coalesce"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is (are) best practice(s) regarding users/groups/roles? Choose 2 answers",
+    "options": [
+      "You should never assign roles to groups.",
+      "You should assign roles to users.",
+      "You should assign roles to groups",
+      "You should add users to groups"
+    ],
+    "answer": [
+      "You should assign roles to groups",
+      "You should add users to groups"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which one of the following statements describes a characteristic of role assignment?",
+    "options": [
+      "Roles can contain other roles, when you are assigned a role, you inherit all the roles within that role",
+      "Users can click on the Personalize Role feature to try different roles",
+      "A role is granted to a user by the System Administrator",
+      "Each user has a role in the ServiceNow platform"
+    ],
+    "answer": [
+      "Roles can contain other roles, when you are assigned a role, you inherit all the roles within that role"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the difference between UI Policy and UI Action?",
+    "options": [
+      "UI Action can make fields read-only, mandatory, or hidden, while UI Policy can make a save button visible for appropriate users.",
+      "UI Policy can make fields read-only, mandatory, or hidden, while UI Action can make a save button visible for appropriate users."
+    ],
+    "answer": [
+      "UI Policy can make fields read-only, mandatory, or hidden, while UI Action can make a save button visible for appropriate users."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "UI Action can prompt that an Incident has been successfully submitted.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "True"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Data Policy can enforce mandatory data on import.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "True"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which are states that you can make a field on a form using UI Policy?",
+    "options": [
+      "read-only",
+      "write-only",
+      "Necessary",
+      "Mandatory",
+      "Empty",
+      "Hidden"
+    ],
+    "answer": [
+      "read-only",
+      "Mandatory",
+      "Hidden"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "UI Policy can make fields read-only, mandatory, or hidden.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "True"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Business Rules are used to enforce mandatory data on a form.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "False"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "ServiceNow databases live at the Data Center.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "True"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What refers to an application or system that accesses a remote service or another computer system, known as a server?",
+    "options": [
+      "Server",
+      "Client",
+      "Script",
+      "Policies"
+    ],
+    "answer": [
+      "Client"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Where would you go in ServiceNow to order services and products offered by various departments?",
+    "options": [
+      "Service Catalog",
+      "Self Service",
+      "Service Department",
+      "Customer Service"
+    ],
+    "answer": [
+      "Service Catalog"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What defines conditions that are evaluated against users to determine which users can create, read, write, and retire knowledge articles?",
+    "options": [
+      "User conditions",
+      "User info",
+      "User Criteria",
+      "User permissions"
+    ],
+    "answer": [
+      "User Criteria"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the purpose of flagging an article in a knowledge base?",
+    "options": [
+      "To mark an article to read later.",
+      "Allow a user to submit feedback about an article",
+      "Reporting an error"
+    ],
+    "answer": [
+      "Allow a user to submit feedback about an article"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the two pathways to view feedback left on a published article?",
+    "options": [
+      "Knowledge > articles > My Flagged",
+      "Knowledge base > my knowledge > flagged articles",
+      "Knowledge > My articles > Flagged",
+      "Knowledge > articles > published"
+    ],
+    "answer": [
+      "Knowledge > articles > My Flagged",
+      "Knowledge > My articles > Flagged"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is a way that you can mark a knowledge article for review?",
+    "options": [
+      "Flag article",
+      "Review",
+      "Bookmark",
+      "On Hold"
+    ],
+    "answer": [
+      "Flag article"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the four knowledge workflows available in the ServiceNow base instance?",
+    "options": [
+      "Approval Publish: Request approval from a manager of the knowledge base before moving the article to the publish state",
+      "Instant Publish: Immediately publishes a draft article without requiring an approval",
+      "Instant Retire: Immediately retires a published article without requiring an approval",
+      "Retire Knowledge: Moves a knowledge article to the retired state"
+    ],
+    "answer": [
+      "Approval Publish: Request approval from a manager of the knowledge base before moving the article to the publish state",
+      "Instant Publish: Immediately publishes a draft article without requiring an approval",
+      "Instant Retire: Immediately retires a published article without requiring an approval",
+      "Retire Knowledge: Moves a knowledge article to the retired state"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Each knowledge base can have unique lifecycle workflows, user criteria, category structures, and management assignments.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "True"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Knowledge articles within a knowledge base are grouped by category.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "True"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What is the master table that contains a record for each table in the database?",
+    "options": [
+      "[sys_master_db]",
+      "[sys_db_object]",
+      "[sys_master_object]",
+      "[sys_object_db]"
+    ],
+    "answer": [
+      "[sys_db_object]"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Record numbers have to be manually incremented.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "False"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which application is used to change the number format per table?",
+    "options": [
+      "Number Maintenance",
+      "System Maintenance",
+      "Table Maintenance",
+      "Record Maintenance"
+    ],
+    "answer": [
+      "Number Maintenance"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Tables are made up of which of the following?",
+    "options": [
+      "records",
+      "lists",
+      "forms",
+      "fields"
+    ],
+    "answer": [
+      "records"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "ServiceNow uses what term to describe all the data saved within a particular form?",
+    "options": [
+      "Fields",
+      "Form",
+      "Record",
+      "Lists"
+    ],
+    "answer": [
+      "Record"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the two aspects to LDAP Integration?",
+    "options": [
+      "Data Population",
+      "Data formatting",
+      "Authorization",
+      "Authentication"
+    ],
+    "answer": [
+      "Data Population",
+      "Authentication"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the 5 provided Roles by ServiceNow?",
+    "options": [
+      "System Administrator: The admin role provides access to all platform features, applications, functions and data.",
+      "Specialized Administrator: Specialized administrator roles manage specific functions or applications, such as Assignment Rules, Knowledge base, reports, or web services",
+      "Fulfiller: Users with the ITIL role may fulfill ITIL activities associated with the ITIL workflow, including Incident and Change management.",
+      "Approver: Users with the Approver user role can perform all requester actions and may view or modify approval records directed to the approver",
+      "Requester: Also known as Employee Self Service (ESS) users, these users have no roles but can submit and manage their own requests, access public pages, etc."
+    ],
+    "answer": [
+      "System Administrator: The admin role provides access to all platform features, applications, functions and data.",
+      "Specialized Administrator: Specialized administrator roles manage specific functions or applications, such as Assignment Rules, Knowledge base, reports, or web services",
+      "Fulfiller: Users with the ITIL role may fulfill ITIL activities associated with the ITIL workflow, including Incident and Change management.",
+      "Approver: Users with the Approver user role can perform all requester actions and may view or modify approval records directed to the approver",
+      "Requester: Also known as Employee Self Service (ESS) users, these users have no roles but can submit and manage their own requests, access public pages, etc."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A role is recorded in which table?",
+    "options": [
+      "Role[sys_user]",
+      "Role[sys_user_profile]",
+      "Role[sys_user_record]",
+      "Role[sys_user_role]"
+    ],
+    "answer": [
+      "Role[sys_user_role]"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the 6 methods available for user authentication?",
+    "options": [
+      "Local Database: The user name and password in their user record in the instance database.",
+      "Multifactor: The user name and password in the database and passcode sent to the user's mobile device that has Google Authenticator installed",
+      "LDAP: The user name and password are accessed via LDAP in the corporate directory, which has a matching user account in the database.",
+      "SAML 2.0: The user name and password configured in a SAML identity provider account, which has a matching user account in the database.",
+      "OAuth 2.0: The user name and password of OAuth identity provider, which has a matching user account in the database",
+      "Digest Token: An encrypted digest of the user name and password in the user record."
+    ],
+    "answer": [
+      "Local Database: The user name and password in their user record in the instance database.",
+      "Multifactor: The user name and password in the database and passcode sent to the user's mobile device that has Google Authenticator installed",
+      "LDAP: The user name and password are accessed via LDAP in the corporate directory, which has a matching user account in the database.",
+      "SAML 2.0: The user name and password configured in a SAML identity provider account, which has a matching user account in the database.",
+      "OAuth 2.0: The user name and password of OAuth identity provider, which has a matching user account in the database",
+      "Digest Token: An encrypted digest of the user name and password in the user record."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A group is stored in which table?",
+    "options": [
+      "Group[user group]",
+      "Group[sys_user]",
+      "Group[sys_user_group]",
+      "Group[sys_user_group_profile]"
+    ],
+    "answer": [
+      "Group[sys_user_group]"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A User is stored in which table?",
+    "options": [
+      "User [sys_user]",
+      "User [sys_user_group]",
+      "User [syst_user_profile]",
+      "User [user_profile]"
+    ],
+    "answer": [
+      "User [sys_user]"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What displays a set of records from a table?",
+    "options": [
+      "View",
+      "Dashboard",
+      "Panel",
+      "List"
+    ],
+    "answer": [
+      "List"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Configuration will not affect what others see on their forms.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "False"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the three components of a filter condition?",
+    "options": [
+      "Table",
+      "Value",
+      "Field",
+      "Operator"
+    ],
+    "answer": [
+      "Value",
+      "Field",
+      "Operator"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which type of interface enables you to display multiple performance analytics, reporting and other widgets on a single screen?",
+    "options": [
+      "Form",
+      "List",
+      "Dashboard",
+      "Timeline"
+    ],
+    "answer": [
+      "Dashboard"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "There are how many common types of Interfaces in ServiceNow?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "answer": [
+      "6"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What are the main UI components of the ServiceNow Platform?",
+    "options": [
+      "Banner Navigator",
+      "Banner Frame",
+      "Application Frame",
+      "Application Navigator",
+      "Content Menu",
+      "Content Frame"
+    ],
+    "answer": [
+      "Banner Frame",
+      "Application Navigator",
+      "Content Frame"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "ServiceNow is a single-instance, multiple tenant architecture?",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      "False"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which one of these applications is available to all users?",
+    "options": [
+      "Change",
+      "Incident",
+      "Facilities",
+      "Self-Service"
+    ],
+    "answer": [
+      "Self-Service"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Access Control rules may be defined with which of the following permission requirements? (Choose three.)",
+    "options": [
+      "Roles",
+      "Conditional Expressions",
+      "Assignment Rules",
+      "Scripts",
+      "User Criteria",
+      "Groups"
+    ],
+    "answer": [
+      "Roles",
+      "Conditional Expressions",
+      "Scripts"
+    ],
     "type": "multiple-choice"
   }
 ]
