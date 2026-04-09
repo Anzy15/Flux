@@ -85,23 +85,28 @@ export default function MockExams() {
 
   return (
     <div className="space-y-6 slide-up-zoom">
-      <header className="flex justify-between items-end">
+      <header className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-8 mt-2">
         <div>
           <h1 className="text-3xl font-display font-bold text-white mb-2">Specialized Exams</h1>
-          <p className="text-surface-400 max-w-2xl text-lg">
+          <p className="text-surface-400 max-w-2xl text-lg leading-relaxed">
             These are pre-compiled rigorous multiple choice exams extracted from sensitive local documentation.
           </p>
         </div>
 
         {/* Admin Tool: Extract PDF locally */}
-        <div className="relative group">
-          <label className={`btn-secondary cursor-pointer ${isExtracting ? 'opacity-50 pointer-events-none' : ''}`}>
+        <div className="relative group shrink-0 w-full md:w-auto">
+          <label className={`btn-secondary w-full md:w-auto cursor-pointer flex items-center justify-center gap-2 whitespace-nowrap ${isExtracting ? 'opacity-50 pointer-events-none' : ''}`}>
             {isExtracting ? (
-              <span className="flex items-center gap-2">
-                <span className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin"></span>
-                {extractStatus}
-              </span>
-            ) : '+ Extract New PDF'}
+              <>
+                <span className="w-5 h-5 border-2 border-primary/30 border-t-primary rounded-full animate-spin"></span>
+                <span className="text-sm font-semibold">{extractStatus}</span>
+              </>
+            ) : (
+              <>
+                <span className="material-symbols-outlined text-[20px]">document_scanner</span>
+                <span className="font-semibold text-sm">Extract New PDF</span>
+              </>
+            )}
             <input type="file" accept=".pdf" className="hidden" disabled={isExtracting} onChange={handleExtractPDF} />
           </label>
         </div>
