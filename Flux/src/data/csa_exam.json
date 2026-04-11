@@ -606,7 +606,7 @@
     "type": "multiple-choice"
   },
   {
-    "question": "In this example, what user would have access to this knowledge base?",
+    "question": "here is as example of the criteria set for a knowledge base: Companies: ACME North America, department: HR, groups: ACME MANAGERS, Match all: yes.  in this example,In this example, what user would have access to this knowledge base?",
     "options": [
       "members of the acme managers group, and HR department, regardless of geography",
       "Employees of the ACME North America, who are members of HR department or the ACME managers group",
