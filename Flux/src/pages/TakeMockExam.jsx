@@ -50,6 +50,74 @@ function playWrongSound() {
   } catch (_) { /* silently fail */ }
 }
 
+// ─── Result screen sounds ─────────────────────────────────────────────────────
+function playVictorySound() {
+  // Triumphant fanfare: ascending arpeggio + sparkle shimmer
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    // Main ascending arpeggio C5 E5 G5 C6
+    [[523.25, 0, 'sine', 0.30], [659.25, 0.12, 'sine', 0.28], [783.99, 0.24, 'sine', 0.28], [1046.5, 0.38, 'sine', 0.32]]
+      .forEach(([freq, delay, type, vol]) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.type = type; osc.frequency.value = freq;
+        gain.gain.setValueAtTime(vol, ctx.currentTime + delay);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + delay + 0.55);
+        osc.start(ctx.currentTime + delay);
+        osc.stop(ctx.currentTime + delay + 0.6);
+      });
+    // Sparkle shimmer layer (triangle wave at high freq)
+    [[2093, 0.42, 0.12], [2637, 0.52, 0.10], [3136, 0.62, 0.08]].forEach(([freq, delay, vol]) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.type = 'triangle'; osc.frequency.value = freq;
+      gain.gain.setValueAtTime(vol, ctx.currentTime + delay);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + delay + 0.18);
+      osc.start(ctx.currentTime + delay);
+      osc.stop(ctx.currentTime + delay + 0.2);
+    });
+  } catch (_) { /* silently fail */ }
+}
+
+function playOkaySound() {
+  // Encouraging swell: gentle major third + fifth
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [[392, 0, 'sine', 0.20], [493.88, 0.1, 'sine', 0.18], [587.33, 0.22, 'sine', 0.20]]
+      .forEach(([freq, delay, type, vol]) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.type = type; osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0.001, ctx.currentTime + delay);
+        gain.gain.linearRampToValueAtTime(vol, ctx.currentTime + delay + 0.08);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + delay + 0.55);
+        osc.start(ctx.currentTime + delay);
+        osc.stop(ctx.currentTime + delay + 0.6);
+      });
+  } catch (_) { /* silently fail */ }
+}
+
+function playFailSound() {
+  // Soft melancholic descent: minor descending line, no harsh buzz
+  try {
+    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+    [[349.23, 0, 'sine', 0.22], [311.13, 0.18, 'sine', 0.20], [261.63, 0.38, 'sine', 0.18]]
+      .forEach(([freq, delay, type, vol]) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.type = type; osc.frequency.value = freq;
+        gain.gain.setValueAtTime(vol, ctx.currentTime + delay);
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + delay + 0.65);
+        osc.start(ctx.currentTime + delay);
+        osc.stop(ctx.currentTime + delay + 0.7);
+      });
+  } catch (_) { /* silently fail */ }
+}
+
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 function formatDuration(ms) {
   if (!ms) return '—';
@@ -205,9 +273,18 @@ export default function TakeMockExam() {
     if (q.type === 'identification' || !q.options || q.options.length === 0) {
       setSelected([opt]);
     } else {
-      setSelected(prev =>
-        prev.includes(opt) ? prev.filter(o => o !== opt) : [...prev, opt]
-      );
+      const expectedCount = getExpectedOptions(q).length;
+      if (expectedCount === 1) {
+        // Radio: replace — only one answer allowed
+        setSelected([opt]);
+      } else {
+        // Checkbox: toggle, but cap at expected count
+        setSelected(prev => {
+          if (prev.includes(opt)) return prev.filter(o => o !== opt);
+          if (prev.length >= expectedCount) return prev; // cap at max
+          return [...prev, opt];
+        });
+      }
     }
   }
 
@@ -252,6 +329,13 @@ export default function TakeMockExam() {
     const score      = finalAnswers.filter(a => a.correct).length;
     const total      = activeQuestions.length;
     const durationMs = examStartTime ? Date.now() - examStartTime : 0;
+    const pct        = total > 0 ? Math.round((score / total) * 100) : 0;
+
+    // Play result sound based on mastery
+    if (pct >= 70) playVictorySound();
+    else if (pct >= 50) playOkaySound();
+    else playFailSound();
+
     try {
       await saveMockExamAttempt(currentUser.uid, examId, {
         playerName: playerName.trim() || 'Anonymous',
@@ -698,9 +782,18 @@ export default function TakeMockExam() {
 
         {/* ── Question card ── */}
         <div className="bg-surface-container-low rounded-2xl p-7 mb-5">
-          <p className="text-xs font-bold text-on-surface-variant uppercase tracking-wider mb-4">
-            Question {idx + 1}
-          </p>
+          <div className="flex items-center justify-between mb-4">
+            <p className="text-xs font-bold text-on-surface-variant uppercase tracking-wider">
+              Question {idx + 1}
+            </p>
+            <span className={`text-xs font-bold px-3 py-1 rounded-full ${
+              expected.length > 1
+                ? 'bg-primary/15 text-primary'
+                : 'bg-surface-container-highest text-on-surface-variant'
+            }`}>
+              {expected.length > 1 ? `Select ${expected.length} answers` : 'Select 1 answer'}
+            </span>
+          </div>
           <p className="text-xl font-headline font-bold text-on-surface leading-snug">
             {q.question}
           </p>
@@ -730,23 +823,32 @@ export default function TakeMockExam() {
             />
           ) : (
             q.options.map((opt, i) => {
-              const isSelected = selected.includes(opt);
-              const isExpected = expected.includes(opt);
+              const isSelected  = selected.includes(opt);
+              const isExpected  = expected.includes(opt);
+              const isMulti     = expected.length > 1;
+              const maxReached  = !confirmed && isMulti && selected.length >= expected.length && !isSelected;
 
-              let cls = 'answer-option flex items-center gap-3 p-4 rounded-xl border-2 cursor-pointer transition-all ';
+              let cls = 'answer-option flex items-center gap-3 p-4 rounded-xl border-2 transition-all ';
               if (confirmed) {
-                if (isExpected)              cls += 'correct';
-                else if (isSelected)         cls += 'incorrect';
-                else                         cls += 'border-outline-variant/10 bg-surface-container opacity-40';
+                if (isExpected)      cls += 'correct cursor-default';
+                else if (isSelected) cls += 'incorrect cursor-default';
+                else                 cls += 'border-outline-variant/10 bg-surface-container opacity-40 cursor-default';
               } else if (isSelected) {
-                cls += 'selected';
+                cls += 'selected cursor-pointer';
+              } else if (maxReached) {
+                cls += 'border-outline-variant/10 bg-surface-container opacity-40 cursor-not-allowed';
               } else {
-                cls += 'border-outline-variant/20 bg-surface-container-high hover:border-primary/30 hover:bg-surface-container-highest';
+                cls += 'border-outline-variant/20 bg-surface-container-high hover:border-primary/30 hover:bg-surface-container-highest cursor-pointer';
               }
 
               return (
-                <button key={i} onClick={() => handleSelect(opt)} className={cls}>
-                  <span className={`w-7 h-7 rounded-full border-2 flex items-center justify-center
+                <button
+                  key={i}
+                  onClick={() => !maxReached && handleSelect(opt)}
+                  disabled={confirmed || maxReached}
+                  className={cls}
+                >
+                  <span className={`w-7 h-7 ${isMulti ? 'rounded' : 'rounded-full'} border-2 flex items-center justify-center
                                     text-xs font-bold shrink-0 transition-colors
                     ${confirmed && isExpected   ? 'border-tertiary-fixed-dim text-tertiary-fixed-dim' :
                       confirmed && isSelected   ? 'border-error text-error' :
@@ -768,14 +870,29 @@ export default function TakeMockExam() {
 
         {/* ── Confirm / Feedback / Next ── */}
         {!confirmed ? (
-          <button
-            onClick={handleConfirm}
-            disabled={!selected || selected.length === 0}
-            className="btn-primary w-full py-4 text-lg disabled:opacity-40
-                       disabled:cursor-not-allowed disabled:hover:scale-100"
-          >
-            Confirm Answer
-          </button>
+          <div>
+            {expected.length > 1 && q.type !== 'identification' && (
+              <p className="text-center text-xs mb-3">
+                <span className={`font-bold ${
+                  selected.length === expected.length ? 'text-primary' : 'text-on-surface-variant'
+                }`}>
+                  {selected.length}/{expected.length}
+                </span>
+                <span className="text-on-surface-variant"> selected</span>
+              </p>
+            )}
+            <button
+              onClick={handleConfirm}
+              disabled={
+                selected.length === 0 ||
+                (q.type !== 'identification' && q.options?.length > 0 && selected.length !== expected.length)
+              }
+              className="btn-primary w-full py-4 text-lg disabled:opacity-40
+                         disabled:cursor-not-allowed disabled:hover:scale-100"
+            >
+              Confirm Answer
+            </button>
+          </div>
         ) : (
           <div className="animate-fade-in">
             <div className={`mb-4 px-5 py-4 rounded-xl flex items-start gap-3

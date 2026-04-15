@@ -1401,7 +1401,7 @@
     ],
     "answer": [
       "Local Sources (XML, CSV, Excel)",
-      "DataHub",
+      "Network Server",
       "JDBC Connection",
       "LDAP Connection"
     ],
@@ -2796,13 +2796,13 @@
       "implementation spoke",
       "JDBC connection",
       "DataHub",
-      "network server",
+      "Network Server",
       "LDAP connection",
       "local sources (i.e., XML, CSV, excel)"
     ],
     "answer": [
       "JDBC connection",
-      "DataHub",
+      "Network Server",
       "LDAP connection",
       "local sources (i.e., XML, CSV, excel)"
     ],
