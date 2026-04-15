@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { extractTextFromPDF } from '../services/pdfParser';
 import { extractExamQuestions } from '../services/groq';
@@ -133,6 +133,31 @@ export default function MockExams() {
             </button>
           </div>
         ))}
+      </div>
+
+      {/* ── Custom Exam Items section ── */}
+      <div className="mt-10">
+        <div className="flex items-center gap-2 mb-4">
+          <span className="material-symbols-outlined text-on-surface-variant text-xl">edit_square</span>
+          <h2 className="text-sm font-bold text-on-surface-variant uppercase tracking-wider">Question Builder</h2>
+        </div>
+        <Link
+          to="/admin-exams/custom-items"
+          className="panel group cursor-pointer hover:-translate-y-1 hover:border-primary/50 transition-all shadow-glass flex items-center gap-5"
+        >
+          <div className="w-12 h-12 rounded-xl bg-surface-800 flex items-center justify-center text-2xl shrink-0 group-hover:bg-primary/20 transition-colors">
+            ✏️
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors mb-1">Custom Exam Items</h3>
+            <p className="text-surface-400 text-sm font-medium">
+              Build, manage, and export custom questions for CSA or CAD exams.
+            </p>
+          </div>
+          <span className="material-symbols-outlined text-on-surface-variant/40 group-hover:text-primary/60 transition-colors shrink-0">
+            arrow_forward
+          </span>
+        </Link>
       </div>
     </div>
   );
