@@ -60,6 +60,7 @@ export default function CustomExamItems() {
   const [form,          setForm]          = useState(EMPTY_FORM);
   const [deleteConfirm, setDeleteConfirm] = useState(null); // holds id to delete
   const [copied,        setCopied]        = useState(false);
+  const [copiedSingleId, setCopiedSingleId] = useState(null);
 
   // Reload list when tab switches
   useEffect(() => {
@@ -117,6 +118,25 @@ export default function CustomExamItems() {
     setModalOpen(false);
     setEditingId(null);
     setForm(EMPTY_FORM);
+  }
+
+  function normalizeQuestion(text) {
+    return text.trim().toLowerCase().replace(/\s+/g, ' ');
+  }
+
+  function findDuplicateExams() {
+    const normalized = normalizeQuestion(form.question);
+    if (!normalized) return [];
+
+    const examKeys = Object.keys(STORAGE_KEYS);
+    return examKeys.filter(examKey => {
+      const examQuestions = examKey === activeExam ? questions : loadQuestions(examKey);
+      return examQuestions.some(q => {
+        if (!q?.question) return false;
+        if (examKey === activeExam && editingId && q.id === editingId) return false;
+        return normalizeQuestion(q.question) === normalized;
+      });
+    });
   }
 
   // ── Save ──────────────────────────────────────────────────────────────────
@@ -191,6 +211,11 @@ export default function CustomExamItems() {
     return JSON.stringify(toExportFormat(questions), null, 2);
   }
 
+  function getSingleQuestionJson(question) {
+    const { id, ...exportable } = question;
+    return JSON.stringify(exportable, null, 2);
+  }
+
   function handleDownload() {
     const blob = new Blob([getJson()], { type: 'application/json' });
     const url  = URL.createObjectURL(blob);
@@ -211,6 +236,16 @@ export default function CustomExamItems() {
     }
   }
 
+  async function handleCopySingle(question) {
+    try {
+      await navigator.clipboard.writeText(getSingleQuestionJson(question));
+      setCopiedSingleId(question.id);
+      setTimeout(() => setCopiedSingleId(null), 2200);
+    } catch {
+      // silently fail — clipboard might be blocked
+    }
+  }
+
   // ── Validation ────────────────────────────────────────────────────────────
   const canSave = (() => {
     if (!form.question.trim()) return false;
@@ -220,9 +255,12 @@ export default function CustomExamItems() {
     return form.correctOptions.some(c => filled.includes(c));
   })();
 
+  const duplicateInExams = findDuplicateExams();
+  const hasDuplicate = duplicateInExams.length > 0;
+
   // ─── Render ───────────────────────────────────────────────────────────────
   return (
-    <div className="max-w-3xl mx-auto slide-up-zoom">
+    <div className="max-w-3xl mx-auto">
 
       {/* Back link */}
       <Link
@@ -272,7 +310,7 @@ export default function CustomExamItems() {
 
         {questions.length > 0 && (
           <div className="flex gap-2">
-            {/* Copy to clipboard */}
+            {/* Copy all to clipboard */}
             <button
               onClick={handleCopy}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl border-2 text-sm font-semibold transition-all
@@ -284,7 +322,7 @@ export default function CustomExamItems() {
               <span className="material-symbols-outlined text-base">
                 {copied ? 'check_circle' : 'content_copy'}
               </span>
-              {copied ? 'Copied!' : 'Copy JSON'}
+              {copied ? 'Copied!' : 'Copy All JSON'}
             </button>
 
             {/* Download */}
@@ -369,6 +407,19 @@ export default function CustomExamItems() {
                              hover:bg-surface-container-high transition-colors"
                 >
                   <span className="material-symbols-outlined text-[18px]">edit</span>
+                </button>
+                <button
+                  onClick={() => handleCopySingle(q)}
+                  title="Copy single JSON"
+                  className={`p-2 rounded-xl transition-colors ${
+                    copiedSingleId === q.id
+                      ? 'text-tertiary-fixed-dim bg-tertiary-fixed/10'
+                      : 'text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high'
+                  }`}
+                >
+                  <span className="material-symbols-outlined text-[18px]">
+                    {copiedSingleId === q.id ? 'check_circle' : 'content_copy'}
+                  </span>
                 </button>
                 <button
                   onClick={() => setDeleteConfirm(q.id)}
@@ -599,6 +650,12 @@ export default function CustomExamItems() {
             )}
 
             {/* Error / Helper Message */}
+            {hasDuplicate && (
+              <p className="text-tertiary text-center text-xs font-semibold mb-4 bg-tertiary/10 py-2 rounded-lg">
+                Warning: Duplicate question found in {duplicateInExams.map(key => EXAM_LABELS[key]).join(' and ')}.
+              </p>
+            )}
+
             {!canSave && (
               <p className="text-error text-center text-xs font-semibold mb-4 bg-error/10 py-2 rounded-lg">
                 {(!form.question.trim()) 
