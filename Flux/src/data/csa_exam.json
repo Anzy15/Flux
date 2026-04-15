@@ -4383,5 +4383,57 @@
       "Scripts"
     ],
     "type": "multiple-choice"
+  },
+  {
+    "question": "During the Preview phase of migrating an Update Set from Development to Test, a conflict is flagged. The dictionary entry for a custom field was modified in both the Update Set and directly in the Test instance. Which action allows the changes from the Development instance to be applied?",
+    "options": [
+      "Commit Local Update",
+      "Merge Update Sets",
+      "Accept Remote Update",
+      "Skip Remote Update"
+    ],
+    "answer": [
+      "Accept Remote Update"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When working on a Task record, a fulfiller needs to log internal troubleshooting steps that the external requester should NOT be able to see. Which journal field should they use?",
+    "options": [
+      "Additional Comments",
+      "Resolution Notes",
+      "Activity Stream",
+      "Work Notes"
+    ],
+    "answer": [
+      "Work Notes"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "In the context of ServiceNow automation, what must be done before an event (like 'incident.inserted') can be successfully fired by a Business Rule and used to trigger a Notification?",
+    "options": [
+      "The event must be added to a Workflow timer activity.",
+      "The event name must be registered in the Event Registry table.",
+      "A Script Include must be written to define the event parameters.",
+      "A scheduled job must be created to process the event queue."
+    ],
+    "answer": [
+      "The even name must be registered in the Event Registry table."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A Department Manager wants all Change Task records associated with a Change Request to appear at the bottom of the Change Request form. Which form element should the administrator configure to meet this requirement?",
+    "options": [
+      "Related List",
+      "Formatter",
+      "View Rule",
+      "Reference Field"
+    ],
+    "answer": [
+      "Related List"
+    ],
+    "type": "multiple-choice"
   }
 ]
