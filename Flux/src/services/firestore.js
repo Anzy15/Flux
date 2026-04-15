@@ -111,6 +111,7 @@ export async function saveQuizAttempt(userId, setId, { score, total, answers }) 
   return mastery
 }
 
+
 export async function getQuizAttempts(userId, setId) {
   const q = query(collection(db, 'quizAttempts'), where('userId', '==', userId), where('setId', '==', setId))
   const snap = await getDocs(q)
@@ -119,3 +120,37 @@ export async function getQuizAttempts(userId, setId) {
   docs.sort((a, b) => (b.attemptDate?.toMillis?.() || 0) - (a.attemptDate?.toMillis?.() || 0))
   return docs
 }
+
+// ─── Mock Exam Attempts ───────────────────────────────────────────────
+
+export async function saveMockExamAttempt(userId, examId, { playerName, score, total, answers, durationMs }) {
+  const mastery = total > 0 ? Math.round((score / total) * 100) : 0
+
+  await addDoc(collection(db, 'mockExamAttempts'), {
+    userId,
+    examId,
+    playerName:     playerName || 'Anonymous',
+    score,
+    total,
+    answers,          // array of { questionText, options, correctAnswer, chosen, correct, type }
+    masteryPercent:  mastery,
+    durationMs:      durationMs || 0,
+    attemptDate:     serverTimestamp(),
+  })
+
+  return mastery
+}
+
+export async function getMockExamAttempts(userId, examId) {
+  const q = query(
+    collection(db, 'mockExamAttempts'),
+    where('userId', '==', userId),
+    where('examId', '==', examId)
+  )
+  const snap = await getDocs(q)
+  let docs = snap.docs.map(d => ({ id: d.id, ...d.data() }))
+  // Sort in memory (descending by attemptDate)
+  docs.sort((a, b) => (b.attemptDate?.toMillis?.() || 0) - (a.attemptDate?.toMillis?.() || 0))
+  return docs
+}
+

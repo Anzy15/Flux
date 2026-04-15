@@ -43,6 +43,13 @@ service cloud.firestore {
       allow read: if isAuth() && resource.data.userId == request.auth.uid;
     }
 
+    // ── mockExamAttempts/{attemptId} ──────────────────────────────
+    // Users can create and read only their own mock exam attempt records.
+    match /mockExamAttempts/{attemptId} {
+      allow create: if isAuth() && request.resource.data.userId == request.auth.uid;
+      allow read: if isAuth() && resource.data.userId == request.auth.uid;
+    }
+
     // Deny everything else by default.
     match /{document=**} {
       allow read, write: if false;

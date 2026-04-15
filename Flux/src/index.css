@@ -174,6 +174,7 @@
 /* ── Quiz answer states ── */
 .answer-option {
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 .answer-option.correct {
   background-color: rgba(162, 232, 100, 0.15) !important;
@@ -189,3 +190,29 @@
   background-color: rgba(147, 146, 255, 0.12) !important;
   border-color: #9392ff !important;
 }
+
+/* ── Mock Exam Flash Effects ── */
+@keyframes flash-correct-anim {
+  0%   { opacity: 0.40; }
+  100% { opacity: 0; }
+}
+@keyframes flash-wrong-anim {
+  0%   { opacity: 0.40; }
+  100% { opacity: 0; }
+}
+.flash-correct {
+  animation: flash-correct-anim 0.65s ease-out forwards;
+}
+.flash-wrong {
+  animation: flash-wrong-anim 0.65s ease-out forwards;
+}
+
+/* ── Slide-up + zoom entrance ── */
+.slide-up-zoom {
+  animation: slide-up-zoom-anim 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes slide-up-zoom-anim {
+  0%   { opacity: 0; transform: translateY(24px) scale(0.97); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
