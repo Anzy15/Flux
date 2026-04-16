@@ -482,7 +482,7 @@
       "Bob Smith does not have a delegate set up on his account"
     ],
     "answer": [
-      "Bob Smith is a VIP"
+      "The Bob Smith user account does not have a manager specified"
     ],
     "type": "multiple-choice"
   },
