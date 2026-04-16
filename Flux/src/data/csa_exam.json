@@ -398,10 +398,10 @@
       "A collection of subject matter experts",
       "A department",
       "A team of users",
-      "A correction of users"
+      "A collection of users"
     ],
     "answer": [
-      "A team of users"
+      "A collection of users"
     ],
     "type": "multiple-choice"
   },
