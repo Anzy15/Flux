@@ -601,7 +601,7 @@
       "community"
     ],
     "answer": [
-      "Getting started"
+      "help panel (question mark Icon)"
     ],
     "type": "multiple-choice"
   },
@@ -1401,7 +1401,7 @@
     ],
     "answer": [
       "Local Sources (XML, CSV, Excel)",
-      "DataHub",
+      "Network Server",
       "JDBC Connection",
       "LDAP Connection"
     ],
@@ -2796,13 +2796,13 @@
       "implementation spoke",
       "JDBC connection",
       "DataHub",
-      "network server",
+      "Network Server",
       "LDAP connection",
       "local sources (i.e., XML, CSV, excel)"
     ],
     "answer": [
       "JDBC connection",
-      "DataHub",
+      "Network Server",
       "LDAP connection",
       "local sources (i.e., XML, CSV, excel)"
     ],
@@ -2964,7 +2964,7 @@
       "automatically select a filter based on keywords"
     ],
     "answer": [
-      "Speak to the condition builder"
+      "filter list by typing in a phrase"
     ],
     "type": "multiple-choice"
   },
@@ -4381,6 +4381,550 @@
       "Roles",
       "Conditional Expressions",
       "Scripts"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "During the Preview phase of migrating an Update Set from Development to Test, a conflict is flagged. The dictionary entry for a custom field was modified in both the Update Set and directly in the Test instance. Which action allows the changes from the Development instance to be applied?",
+    "options": [
+      "Commit Local Update",
+      "Merge Update Sets",
+      "Accept Remote Update",
+      "Skip Remote Update"
+    ],
+    "answer": [
+      "Accept Remote Update"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When working on a Task record, a fulfiller needs to log internal troubleshooting steps that the external requester should NOT be able to see. Which journal field should they use?",
+    "options": [
+      "Additional Comments",
+      "Resolution Notes",
+      "Activity Stream",
+      "Work Notes"
+    ],
+    "answer": [
+      "Work Notes"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "In the context of ServiceNow automation, what must be done before an event (like 'incident.inserted') can be successfully fired by a Business Rule and used to trigger a Notification?",
+    "options": [
+      "The event must be added to a Workflow timer activity.",
+      "The event name must be registered in the Event Registry table.",
+      "A Script Include must be written to define the event parameters.",
+      "A scheduled job must be created to process the event queue."
+    ],
+    "answer": [
+      "The event name must be registered in the Event Registry table."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A Department Manager wants all Change Task records associated with a Change Request to appear at the bottom of the Change Request form. Which form element should the administrator configure to meet this requirement?",
+    "options": [
+      "Related List",
+      "Formatter",
+      "View Rule",
+      "Reference Field"
+    ],
+    "answer": [
+      "Related List"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "During a data import process, the administrator sets the 'Employee Number' field as the Coalesce field. If an imported row has an Employee Number that already exists in the target table, what happens?",
+    "options": [
+      "The import process fails and logs an error.",
+      "A new, duplicate record is created.",
+      "The existing record in the target table is updated.",
+      "All rows in the import set are treated as new records."
+    ],
+    "answer": [
+      "The existing record in the target table is updated."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A System Administrator recently activated a plugin to test a new feature but later realized it conflicts with current business processes. What is the correct procedure to deactivate the plugin?",
+    "options": [
+      "Delete the plugin data via the System Dictionary.",
+      "Plugins cannot be disabled or deactivated once activated; individual components must be hidden manually.",
+      "Request a rollback from ServiceNow Support.",
+      "Navigate to System Applications > Plugins and click 'Deactivate.'"
+    ],
+    "answer": [
+      "Plugins cannot be disabled or deactivated once activated; individual components must be hidden manually."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When you set a data policy that is applied to all data entered into the platform (UI, import sets, or web services), where does this policy execute by default?",
+    "options": [
+      "Client",
+      "Network",
+      "Server",
+      "Browser"
+    ],
+    "answer": [
+      "Server"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Certain tables have a prefix like x_. Which kind of tables has a name that starts with a custom prefix?",
+    "options": [
+      "Scoped application table",
+      "Excluded table",
+      "Explanation table",
+      "Xray search table",
+      "System table"
+    ],
+    "answer": [
+      "Scoped application table"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When viewing a Problem record, a system administrator observes several tabs at the bottom of the form displaying associated Incidents and Change Requests. Which statements accurately describe these elements? (Select Two)",
+    "options": [
+      "They can only contain read-only data",
+      "They appear at the top of the form header for easy access",
+      "They display records from other tables that have a relationship to the current record",
+      "They are strictly used to display the audit history of the current record",
+      "They are known as Related Lists"
+    ],
+    "answer": [
+      "They are known as Related Lists",
+      "They display records from other tables that have a relationship to the current record"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What best describes the primary function of ServiceNow Virtual Agent for end-user interaction?",
+    "options": [
+      "It provides a conversational interface to automate support tasks and resolve common issues immediately",
+      "It routes all user inquiries directly to a live human agent without attempting resolution",
+      "It generates static Knowledge Base articles based on incident trends",
+      "It replaces the Service Catalog by removing the ability to submit forms manually"
+    ],
+    "answer": [
+      "It provides a conversational interface to automate support tasks and resolve common issues immediately"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which of the following are valid triggers for a Client Script? (Select Two)",
+    "options": [
+      "onUpdate",
+      "onDelete",
+      "onCellEdit",
+      "onLoad",
+      "onlnsert"
+    ],
+    "answer": [
+      "onCellEdit",
+      "onLoad"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What do you click when you have made modifications to your report, and you want to see the results without saving?",
+    "options": [
+      "Execute",
+      "Try it",
+      "Test",
+      "Run",
+      "Preview"
+    ],
+    "answer": [
+      "Run"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement accurately describes the execution behavior of Business Rules?",
+    "options": [
+      "They are client-side scripts used to make form fields mandatory.",
+      "They are not real-time; they trigger when a record is Inserted, Updated, Deleted, or Queried.",
+      "They only apply to data imported via Import Sets or Web Services.",
+      "They are real-time and execute immediately as a user types into a form field."
+    ],
+    "answer": [
+      "They are not real-time; they trigger when a record is Inserted, Updated, Deleted, or Queried."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "An IT agent is working on an Incident form. They want to save the changes they just made to the existing record and immediately return to the list view they were previously on. Which saving option should they use?",
+    "options": [
+      "Insert",
+      "Update",
+      "Save",
+      "Submit"
+    ],
+    "answer": [
+      "Update"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "During a data import process, the administrator sets the 'Employee Number' field as the Coalesce field. If an imported row has an Employee Number that already exists in the target table, what happens?",
+    "options": [
+      "The import process fails and logs an error.",
+      "All rows in the import set are treated as new records.",
+      "A new, duplicate record is created.",
+      "The existing record in the target table is updated."
+    ],
+    "answer": [
+      "The existing record in the target table is updated."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When evaluating Access Control Lists (ACLs) for a record, if a user passes the row-level ACL but fails the field-level ACL for a specific column, what is the result?",
+    "options": [
+      "They can see the field but cannot save the record.",
+      "The field-level ACL is ignored because the row-level ACL takes precedence.",
+      "They are denied access to the entire record.",
+      "They see the record, but the specific field is hidden or read-only."
+    ],
+    "answer": [
+      "They see the record, but the specific field is hidden or read-only."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When merging multiple Update Sets into a single batch in a Development instance, what happens if the system detects that the exact same Business Rule was modified in two different Update Sets?",
+    "options": [
+      "The merge process fails entirely and prompts the developer to manually delete the duplicate from one of the sets.",
+      "The version from the Update Set created first is preserved.",
+      "The system compares the timestamps and includes only the most recently updated version of the Business Rule in the merged set.",
+      "Both versions are included, and the system prompts the administrator to resolve the conflict during the Commit phase."
+    ],
+    "answer": [
+      "The system compares the timestamps and includes only the most recently updated version of the Business Rule in the merged set."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "After you create a new table, what is the best practice regarding the navigation pane? (Choose two)",
+    "options": [
+      "Set the font style on both the application menu and the module",
+      "Set the filter condition on the application module",
+      "Create application menu with the same name as the table label",
+      "Specify which roles are able to see the application menu",
+      "Create module with the plural of the table label",
+      "Specify which roles are able to see the module"
+    ],
+    "answer": [
+      "Create application menu with the same name as the table label",
+      "Create module with the plural of the table label"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "What process allows users to create, categorise, review, approve and browse important information in a centralised location that is shared by the entire organization?",
+    "options": [
+      "Knowledge management",
+      "Business information management",
+      "Information portal management",
+      "Self-service management",
+      "Knowledge-centered management"
+    ],
+    "answer": [
+      "Knowledge management"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "In the ServiceNow infrastructure stack, which component is responsible for processing business logic, executing Business Rules, and handling user sessions?",
+    "options": [
+      "The Relational Database (RDBMS)",
+      "The MID Server",
+      "The Application Node",
+      "The Load Balancer"
+    ],
+    "answer": [
+      "The Application Node"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Three separate email notifications are triggered simultaneously for the same Incident, all targeting the same Caller. Notification A has a weight of 50, Notification B has a weight of 50, and Notification C has a weight of 0. Based on weight rules, which notifications are actually sent by the system?",
+    "options": [
+      "Notifications A, B, and C are all sent.",
+      "Only Notification C is sent.",
+      "Only Notifications A and B are sent.",
+      "Only Notification A or B is sent, depending on which was processed first."
+    ],
+    "answer": [
+      "Notifications A, B, and C are all sent."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When designing the hierarchy of a Service Catalog to ensure items are easy to locate, which container allows administrators to organize Catalog Items into logical groupings?",
+    "options": [
+      "Fulfillment Groups",
+      "Categories",
+      "Execution Plans",
+      "Variable Sets"
+    ],
+    "answer": [
+      "Categories"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "ServiceNow relies on a single-tenant architecture. Which of the following accurately describes a characteristic of this model?",
+    "options": [
+      "Your instance has its own dedicated database, applications, and data isolation.",
+      "Customers share a centralized database to reduce infrastructure costs.",
+      "The platform separates IT applications from HR applications into different databases.",
+      "Instances are upgraded automatically based on multi-tenant server availability."
+    ],
+    "answer": [
+      "Your instance has its own dedicated database, applications, and data isolation."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Within the structure of a Knowledge Base, which element is primarily used to group related articles into a browsable hierarchy?",
+    "options": [
+      "Categories",
+      "Taxonomy Layers",
+      "Assignment Rules",
+      "Configuration Items"
+    ],
+    "answer": [
+      "Categories"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A System Administrator needs to organize fields into a tabbed layout on the Incident form. Which configuration tool provides a drag-and-drop interface for creating tabs and arranging fields?",
+    "options": [
+      "Table Column Editor",
+      "Form Layout",
+      "Form Designer",
+      "Schema Map"
+    ],
+    "answer": [
+      "Form Designer"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "In which phase of the Update Set migration process does the system identify conflicts, such as a dictionary entry that was modified in both the source and target instances?",
+    "options": [
+      "Preview phase",
+      "Export phase",
+      "Retrieve phase",
+      "Commit phase"
+    ],
+    "answer": [
+      "Preview phase"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A flow must pause execution indefinitely until a specific Task record's state changes to 'Closed Complete'. Which Flow Logic type is appropriate for this requirement?",
+    "options": [
+      "Wait for Condition",
+      "Call a Workflow",
+      "Make a Decision",
+      "Dynamic Flow"
+    ],
+    "answer": [
+      "Wait for Condition"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "The 'Resolution code' field must be visible and mandatory only when the 'State' field is set to 'Resolved'. Which feature natively and dynamically controls field visibility and mandatory status based on a field value without a server-side round-trip?",
+    "options": [
+      "Access Control List (ACL)",
+      "Data Policy",
+      "Business Rule",
+      "UI Policy"
+    ],
+    "answer": [
+      "UI Policy"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "When reviewing the database schema, what defines a 'Base Table' (such as the Task table)?",
+    "options": [
+      "A custom table created by an administrator, denoted by the 'u_' prefix.",
+      "A table that is used strictly to join two or more tables together for reporting.",
+      "A table that is extended by others but does not extend any other table itself.",
+      "A table that contains the master definitions for every column in the instance."
+    ],
+    "answer": [
+      "A table that is extended by others but does not extend any other table itself."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "In what order does ServiceNow evaluate the components of an Access Control List (ACL) rule when determining whether to grant access?",
+    "options": [
+      "Roles, then Scripts, then Conditions",
+      "Scripts, then Roles, then Conditions",
+      "Roles, then Conditions, then Scripts",
+      "Conditions, then Scripts, then Roles"
+    ],
+    "answer": [
+      "Roles, then Conditions, then Scripts"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which modules can you use to create a new table? (Choose two)",
+    "options": [
+      "Schema map",
+      "Dictionary",
+      "Tables",
+      "Tables and columns"
+    ],
+    "answer": [
+      "Tables and columns",
+      "Tables"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which statement correctly describes Access Control Rule evaluation?",
+    "options": [
+      "Rules are evaluated using roles. The role with the most permissions evaluates the rules first",
+      "Roles are evaluated from general to specific, so a table rule must be active to continue",
+      "If more than one rule applies to a row, the older rule is evaluated first",
+      "If a row level rule and a field level rule exist, both rules must be true before an operation is allowed"
+    ],
+    "answer": [
+      "If a row level rule and a field level rule exist, both rules must be true before an operation is allowed"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "An end-user fills out a form in the Service Catalog to report a broken printer. This form automatically translates into a task-based Incident record for the IT team to resolve. What Service Catalog component did the user interact with?",
+    "options": [
+      "Record Producer",
+      "Order Guide",
+      "Variable Set",
+      "Catalog Item"
+    ],
+    "answer": [
+      "Record Producer"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A user attempts to update a specific field on an Incident record. The system evaluates the Access Control Lists (ACLs). The user fails the Table-level ACL but meets the requirements for the Field-level ACL. What is the result?",
+    "options": [
+      "The system prompts the user to elevate their roles.",
+      "The user is denied access and cannot see the record at all.",
+      "The user can view the field, but cannot update it.",
+      "The user can update the specific field, but no other fields on the record."
+    ],
+    "answer": [
+      "The user is denied access and cannot see the record at all."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "Which client-side API is used specifically to manipulate the form itself, such as using .setMandatory() or .getValue()?",
+    "options": [
+      "g_user",
+      "GlideSystem (gs)",
+      "g_form",
+      "GlideRecord"
+    ],
+    "answer": [
+      "g_form"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "An administrator wants all Service Desk analysts to generate reports using a consistent, pre-defined set of filter criteria for 'Active Incidents' without manually recreating complex conditions. What reporting object should the administrator define?",
+    "options": [
+      "Data Source",
+      "Metric Definition",
+      "Report Source",
+      "Dataset Trigger"
+    ],
+    "answer": [
+      "Report Source"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "An administrator needs to change the browser tab title and the system banner image. Which module in the system navigation is used to configure these settings?",
+    "options": [
+      "System Properties > CSS",
+      "System UI > Themes",
+      "System Properties > Basic Configuration UI16",
+      "Self-Service > My Branding"
+    ],
+    "answer": [
+      "System Properties > Basic Configuration UI16"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "If a record is created and no assignment rule applies, and there is no default assignment group configured, what happens to the record?",
+    "options": [
+      "The system throws an error and prevents the record from being saved.",
+      "The record remains unassigned.",
+      "It is assigned to the System Administrator automatically.",
+      "It is assigned to the user who created it."
+    ],
+    "answer": [
+      "The record remains unassigned."
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "A user is looking for a specific knowledge article and a catalog item. Which feature, powered by the 'Zing' engine, should they use?",
+    "options": [
+      "Contextual App Pill",
+      "The All Menu",
+      "Global Search",
+      "History Menu"
+    ],
+    "answer": [
+      "Global Search"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "An alert message must appear in the browser when a user selects 'High' priority on a Change Request. How can this be achieved using a UI Policy?",
+    "options": [
+      "By defining a UI Policy Action for the 'Alert' field",
+      "By using the 'Run scripts' option to write client-side code",
+      "By configuring the 'Reverse if false' boolean",
+      "By calling a Business Rule directly from the UI Policy Action"
+    ],
+    "answer": [
+      "By using the 'Run scripts' option to write client-side code"
+    ],
+    "type": "multiple-choice"
+  },
+  {
+    "question": "If you want to disable double-click list editing for a specific table but allow it elsewhere across the platform, what should you configure?",
+    "options": [
+      "Global System Property",
+      "Client Script (onCellEdit)",
+      "List Control",
+      "UI Policy assigned to the list view"
+    ],
+    "answer": [
+      "List Control"
     ],
     "type": "multiple-choice"
   }

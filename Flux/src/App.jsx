@@ -14,6 +14,7 @@ import Recent    from './pages/Recent'
 import Settings  from './pages/Settings'
 import MockExams from './pages/MockExams'
 import TakeMockExam from './pages/TakeMockExam'
+import CustomExamItems from './pages/CustomExamItems'
 
 function ProtectedRoute({ children }) {
   const { currentUser } = useAuth()
@@ -106,6 +107,12 @@ export default function App() {
       <Route path="/admin-exams" element={
         <ProtectedRoute>
           <AppLayout><MockExams /></AppLayout>
+        </ProtectedRoute>
+      } />
+
+      <Route path="/admin-exams/custom-items" element={
+        <ProtectedRoute>
+          <AppLayout><CustomExamItems /></AppLayout>
         </ProtectedRoute>
       } />
 
